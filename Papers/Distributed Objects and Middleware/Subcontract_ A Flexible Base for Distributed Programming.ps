@@ -1,0 +1,5638 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%%BeginProlog
+%
+% FrameMaker postscript_prolog 3.0, for use with FrameMaker 3.0
+% This postscript_prolog file is Copyright (c) 1986-1991 Frame Technology
+% Corporation.  All rights reserved.  This postscript_prolog file may be
+% freely copied and distributed in conjunction with documents created using
+% FrameMaker.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+
+% Set up Color vs. Black-and-White
+
+/FMPrintInColor false def
+/colorimage where { pop
+    /currentcolortransfer where { pop
+	/FMPrintInColor true def
+	statusdict begin 
+	    /processcolors where { 
+		pop processcolors 1 le {
+		    /FMPrintInColor false def
+		} if
+	    }{
+		/deviceinfo where {
+		    pop deviceinfo /Colors known { 
+			deviceinfo /Colors get 1 le {
+			    /FMPrintInColor false def
+			} if
+		    } if
+		} if
+	    } ifelse
+	end
+	/currentcanvas where {  % NeWSprint?
+	    pop systemdict /separationdict known not {
+		/FMPrintInColor false def
+	    } if
+	} if
+    } if
+} if
+
+
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 17 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Helvetica FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 0 /Times-Roman FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+5 1 /Symbol FMFONTDEFINE
+6 0 /Courier-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+36 9 567 774 R
+7 X
+0 K
+V
+0 18 Q
+0 X
+(Subcontract: A Flexible Base for Distributed) 72 708 T
+(Programming) 72 688 T
+1 12 Q
+(Graham Hamilton) 72 654 T
+(Michael L. Powell) 72 640 T
+(James G. Mitchell) 72 626 T
+1 9 Q
+(SMLI TR-93-13) 72 569 T
+(April 1993) 216 569 T
+0 11 Q
+(Abstract:) 72 516.67 T
+1 10 Q
+-0.19 (A key problem in operating systems is permitting the orderly introduction of new properties and new implemen-) 72 494.33 P
+0.07 (tation techniques. W) 72 482.33 P
+0.07 (e describe a mechanism, subcontract, that within the context of an object-oriented distrib-) 162.56 482.33 P
+2.5 (uted system permits application programmers control over fundamental object mechanisms. This allows) 72 470.33 P
+0.43 (programmers to de\336ne new object communication without modifying the base system. W) 72 458.33 P
+0.43 (e describe how new) 468.34 458.33 P
+1.22 (subcontracts can be introduced as alternative communication mechanisms in the place of existing subcon-) 72 446.33 P
+-0.22 (tracts. W) 72 434.33 P
+-0.22 (e also brie\337y descibe some of the uses we have made of the subcontract mechanism to support cach-) 111.05 434.33 P
+(ing, crash recovery) 72 422.33 T
+(, and replication.) 155.73 422.33 T
+2 8 Q
+(email addr) 441 151 T
+(esses:) 477.97 151 T
+3 F
+(graham.hamilton@eng.sun.com) 441 143.96 T
+(michael.powell@eng.sun.com) 441 136.77 T
+(jim.mitchell@eng.sun.com) 441 129.58 T
+0 39 39 248 96 107.33 31.17 70.88 156.29 FMBEGINEPSF
+%%BeginDocument: <inline>
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: Adobe Illustrator(TM) 3.0
+%%For: (martine) (sun)
+%%Title: (SunLabsFLmedOLA)
+%%CreationDate: (5/28/92) (2:33 PM)
+%%DocumentProcessColors: Black
+%%DocumentFonts: Helvetica
+%%DocumentSuppliedResources: procset Adobe_packedarray 2.0 0
+%%+ procset Adobe_cmykcolor 1.1 0
+%%+ procset Adobe_cshow 1.1 0
+%%+ procset Adobe_customcolor 1.0 0
+%%+ procset Adobe_typography_AI3 1.0 0
+%%+ procset Adobe_IllustratorA_AI3 1.0 0
+%%BoundingBox: 39 39 248 96
+%AI3_ColorUsage: Black&White
+%AI3_TemplateBox: 306 396 306 396
+%AI3_TileBox: 30 31 582 761
+%AI3_DocumentPreview: Macintosh_Pic
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Adobe_packedarray 2.0 0
+%%Title: (Packed Array Operators)
+%%Version: 2.0 
+%%CreationDate: (8/2/90) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+userdict /Adobe_packedarray 5 dict dup begin put
+/initialize			% - initialize -
+{
+/packedarray where
+	{
+	pop
+	}
+	{
+	Adobe_packedarray begin
+	Adobe_packedarray
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		userdict 3 1 roll put
+		} forall
+	end
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+} def
+/packedarray		% arguments count packedarray array
+{
+array astore readonly
+} def
+/setpacking			% boolean setpacking -
+{
+pop
+} def
+/currentpacking		% - setpacking boolean
+{
+false
+} def
+currentdict readonly pop end
+%%EndResource
+Adobe_packedarray /initialize get exec
+%%BeginResource: procset Adobe_cmykcolor 1.1 0
+%%Title: (CMYK Color Operators)
+%%Version: 1.1 
+%%CreationDate: (1/23/89) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_cmykcolor 4 dict dup begin put
+/initialize			% - initialize -
+{
+/setcmykcolor where
+	{
+	pop
+	}
+	{
+	userdict /Adobe_cmykcolor_vars 2 dict dup begin put
+	/_setrgbcolor
+		/setrgbcolor load def
+	/_currentrgbcolor
+		/currentrgbcolor load def
+	Adobe_cmykcolor begin
+	Adobe_cmykcolor
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		pop pop
+		} forall
+	end
+	end
+	Adobe_cmykcolor begin
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+currentdict Adobe_cmykcolor eq
+	{
+	end
+	} if
+} def
+/setcmykcolor		% cyan magenta yellow black setcmykcolor -
+{
+1 sub 4 1 roll
+3
+	{
+	3 index add neg dup 0 lt
+		{
+		pop 0
+		} if
+	3 1 roll
+	} repeat
+Adobe_cmykcolor_vars /_setrgbcolor get exec
+pop
+} def 
+/currentcmykcolor	% - currentcmykcolor cyan magenta yellow black
+{
+Adobe_cmykcolor_vars /_currentrgbcolor get exec
+3
+	{
+	1 sub neg 3 1 roll
+	} repeat
+0
+} def
+currentdict readonly pop end
+setpacking
+%%EndResource
+%%BeginResource: procset Adobe_cshow 1.1 0
+%%Title: (cshow Operator)
+%%Version: 1.1 
+%%CreationDate: (1/23/89) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_cshow 3 dict dup begin put
+/initialize			% - initialize -
+{
+/cshow where
+	{
+	pop
+	}
+	{
+	userdict /Adobe_cshow_vars 1 dict dup begin put
+	/_cshow		% - _cshow proc
+		{} def
+	Adobe_cshow begin
+	Adobe_cshow
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		userdict 3 1 roll put
+		} forall
+	end
+	end
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+} def
+/cshow				% proc string cshow -
+{
+exch
+Adobe_cshow_vars
+	exch /_cshow
+	exch put
+	{
+	0 0 Adobe_cshow_vars /_cshow get exec
+	} forall
+} def
+currentdict readonly pop end
+setpacking
+%%EndResource
+%%BeginResource: procset Adobe_customcolor 1.0 0
+%%Title: (Custom Color Operators)
+%%Version: 1.0 
+%%CreationDate: (5/9/88) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_customcolor 5 dict dup begin put
+/initialize			% - initialize -
+{
+/setcustomcolor where
+	{
+	pop
+	}
+	{
+	Adobe_customcolor begin
+	Adobe_customcolor
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		pop pop
+		} forall
+	end
+	Adobe_customcolor begin
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+currentdict Adobe_customcolor eq
+	{
+	end
+	} if
+} def
+/findcmykcustomcolor	% cyan magenta yellow black name findcmykcustomcolor object
+{
+5 packedarray
+}  def
+/setcustomcolor		% object tint setcustomcolor -
+{
+exch
+aload pop pop
+4
+	{
+	4 index mul 4 1 roll
+	} repeat
+5 -1 roll pop
+setcmykcolor
+} def
+/setoverprint		% boolean setoverprint -
+{
+pop
+} def
+currentdict readonly pop end
+setpacking
+%%EndResource
+%%BeginResource: procset Adobe_typography_AI3 1.0 0
+%%Title: (Typography Operators)
+%%Version: 1.0 
+%%CreationDate:(5/31/90) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_typography_AI3 46 dict dup begin put
+/initialize			% - initialize -
+{
+/TZ
+ where
+	{
+	pop
+	}
+	{
+	Adobe_typography_AI3 begin
+	Adobe_typography_AI3
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		pop pop
+		} forall
+	end
+	Adobe_typography_AI3 begin
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+currentdict Adobe_typography_AI3 eq
+	{
+	end
+	} if
+} def
+% [ number value stream [ array for encoding modification ] modifyEncoding ==> [ modified array ]
+/modifyEncoding
+{
+	/_tempEncode exch ddef
+	
+	% pointer for sequential encodings
+	/_pntr 0 ddef
+	
+	{
+		% get bottom object
+		counttomark -1 roll
+		% is it a mark ?
+		dup type dup /marktype eq 		
+		{
+			% exit
+			pop pop exit
+		}
+		{
+			% ... object ... type ....
+			% insert if a nametype
+			/nametype eq
+			{
+				% insert the name at _pntr and increment pointer
+				_tempEncode /_pntr dup load dup 3 1 roll 1 add ddef 3 -1 roll
+				put
+			}
+			{
+				% reset _pntr if it's a number
+				/_pntr exch ddef					
+			}
+			ifelse
+		}
+		ifelse
+	}
+	loop	
+	
+	% return the modified encoding
+	_tempEncode
+}
+def
+/TE	% Set std platform encoding 	% (encoding pairs) TE -
+{
+	StandardEncoding 256 array copy modifyEncoding 
+	/_nativeEncoding exch def
+} def
+% re-define font
+% expected arguments
+% for 'normal fonts : 
+%	[ /_Helvetica-Bold/Helvetica-Bold direction fontScript defaultEncoding TZ
+%
+% for cartographic, pictographic, and expert fonts :
+% 	[ ... number value stream ... /_Helvetica-Bold/Helvetica-Bold 
+%	direction fontScript defaultEncoding TZ
+/TZ		
+{
+	% platform dependent coding flag
+	/_useNativeEncoding exch def
+	% pop fontScript & direction
+	pop pop
+	
+	% create a new dictionary with length
+	% equal to original dictionary length + 2
+	% copy all the key/value pairs except FID
+	findfont dup length 2 add dict
+	
+	begin
+	
+		% copy all the values but the FID
+		% into the new dictionary
+		mark exch
+		{
+			1 index /FID ne { def } if cleartomark mark
+		}
+		forall
+		% discard last mark
+		pop
+		
+		% define FontName
+		/FontName exch def
+		
+		% if no re-encoding stream is present
+		% then if the base encoding vector of the font
+		% is the same as StandardEncoding
+		% and the use platform encoding flag is true
+		% then install AI platform encoding
+		% else leave the base encoding in effect
+		counttomark 0 eq
+		{
+			Encoding StandardEncoding eq 1 _useNativeEncoding eq and
+			{
+				/Encoding _nativeEncoding def
+			}
+			if
+			% clean up
+			cleartomark
+		}
+		{	
+			% custom encoding to be done
+			% start off with a copy of the font's standard encoding
+			/Encoding load 256 array copy 
+			modifyEncoding /Encoding exch def
+		}
+		ifelse		
+		FontName currentdict
+	end
+	
+	% register the new font
+	definefont pop
+}
+def
+% text painting operators
+/tr					% string tr ax ay string 
+{
+_ax _ay 3 2 roll
+} def
+/trj				% string trj cx cy fillchar ax ay string 
+{
+_cx _cy _sp _ax _ay 6 5 roll
+} def
+/a0
+{
+/Tx	% text							% textString Tx -
+	{
+	dup 
+	currentpoint 3 2 roll
+	tr _psf
+	newpath moveto
+	tr _ctm _pss
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	dup
+	currentpoint 3 2 roll
+	trj _pjsf
+	newpath moveto
+	trj _ctm _pjss
+	} ddef
+	
+} def
+/a1
+{
+W B
+} def
+/e0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr _psf
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj _pjsf
+	} ddef
+} def
+/e1
+{
+W F 
+} def
+/i0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr sp
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj jsp
+	} ddef
+} def
+/o0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr sw rmoveto
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj swj rmoveto
+	} ddef
+} def
+/r0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr _ctm _pss
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj _ctm _pjss
+	} ddef
+} def
+/r1
+{
+W S
+} def
+% font operators
+% Binding
+/To	% begin text 					% bindType To -
+{
+	pop _ctm currentmatrix pop
+} def
+/TO	% end text					% TO -
+{
+	Te _ctm setmatrix newpath
+} def
+% Text paths
+/Tp	% begin text path				% a b c d tx ty startPt Tp -
+{
+	pop _tm astore pop _ctm setmatrix 
+	2 dict begin /W {} def /h {} def
+} def
+/TP	% end text path					% TP -
+{
+	end
+	iTm 0 0 moveto
+} def
+% Render mode & matrix operators
+/Tr	% begin render					% render Tr - 
+{
+	Te currentpoint newpath moveto
+	dup 8 eq {pop 0} {dup 9 eq {pop 1} if} ifelse
+	dup /_render exch ddef
+	_renderStart exch get load exec
+} def
+/iTm % internal set text matrix		% - iTm -	(uses _tm as implicit argument)
+{
+_ctm setmatrix _tm concat 0 _rise translate _hs 1 scale
+} def
+/Tm % set text matrix				% a b c d tx ty Tm -
+{
+_tm astore pop iTm 0 0 moveto
+} def
+/Td % translate text matrix 		% tx ty Td -
+{
+_mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto
+} def
+/Te	% end render					% - Te -
+{
+	_render -1 eq {} {_renderEnd _render get dup null ne {load exec} {pop} ifelse} ifelse
+	/_render -1 ddef
+} def
+% Attributes
+/Ta	% set alignment					% alignment Ta -
+{
+pop
+} def
+/Tf	% set font name and size		% fontname size Tf -
+{
+dup 1000 div /_fScl exch ddef
+exch findfont exch scalefont setfont
+} def
+/Tl	% set leading					% leading paragraphLeading Tl -
+{
+pop
+0 exch _leading astore pop
+} def
+/Tt	% set user tracking				% userTracking Tt -
+{
+pop
+} def
+/TW % set word spacing				% minSpace optSpace maxSpace TW -
+{
+3 npop
+} def
+/Tw	% set computed word spacing		% wordSpace Tw
+{
+/_cx exch ddef
+} def
+/TC % set character spacing			% minSpace optSpace maxSpace TC -
+{
+3 npop
+} def
+/Tc	% set computed char spacing 	% charSpace Tc -
+{
+/_ax exch ddef
+} def
+/Ts % set super/subscripting (rise)	% rise Ts -
+{
+/_rise exch ddef
+currentpoint
+iTm
+moveto
+} def
+/Ti	% set indentation				% firstStartIndent otherStartIndent stopIndent Ti -
+{
+3 npop
+} def
+/Tz % set horizontal scaling		% scalePercent Tz -
+{
+100 div /_hs exch ddef
+iTm
+} def
+/TA % set pairwise kerning			% autoKern TA -
+									%	autoKern = 0 -> no pair kerning
+									%			 = 1 -> automatic pair kerning
+{
+pop
+} def
+/Tq % set hanging quotes			% hangingQuotes Tq -
+									%	hangingQuotes 	= 0 -> no hanging quotes
+									%			 		= 1 -> hanging quotes
+{
+pop
+} def
+% Text Bodies
+/TX {pop} def
+%/Tx	% non-justified text			% textString Tx -
+%/Tj	% justified text				% textString Tj -
+/Tk	% kern							% autoKern kernValue Tk -
+									%  	autoKern = 0 -> manual kern, = 1 -> auto kern
+									%	kernValue = kern value in em/1000 space
+{
+exch pop _fScl mul neg 0 rmoveto
+} def
+/TK	% non-printing kern				% autoKern kernValue TK -
+{
+2 npop
+} def
+/T* % carriage return & line feed	% - T* -
+{
+_leading aload pop neg Td
+} def
+/T*- % carriage return & negative line feed	% - T*- -
+{
+_leading aload pop Td
+} def
+/T-	% print a discretionary hyphen	% - T- -
+{
+_hyphen Tx
+} def
+/T+	% discretionary hyphen hyphen	% - T+ -
+{} def
+/TR	% reset pattern matrix 			% a b c d tx ty TR -
+{
+_ctm currentmatrix pop 	
+_tm astore pop 
+iTm 0 0 moveto 
+} def
+/TS	% special chars					% textString justified TS -
+{
+0 eq {Tx} {Tj} ifelse
+} def
+currentdict readonly pop end
+setpacking
+%%EndResource
+%%BeginResource: procset Adobe_IllustratorA_AI3 1.0 0
+%%Title: (Adobe Illustrator (R) Version 3.0 Abbreviated Prolog)
+%%Version: 1.0 
+%%CreationDate: (7/22/89) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_IllustratorA_AI3 61 dict dup begin put
+% initialization
+/initialize				% - initialize -
+{
+userdict /Adobe_IllustratorA_AI3_vars 46 dict dup begin put
+% paint operands
+/_lp /none def
+/_pf {} def
+/_ps {} def
+/_psf {} def
+/_pss {} def
+/_pjsf {} def
+/_pjss {} def
+/_pola 0 def
+/_doClip 0 def
+% paint operators
+/cf	currentflat def	% - cf flatness
+% typography operands
+/_tm matrix def
+/_renderStart [/e0 /r0 /a0 /o0 /i0 /i0 /i0 /i0] def 
+/_renderEnd [null null null null /e1 /r1 /a1 /clip] def
+/_render -1 def
+/_rise 0 def
+/_ax 0 def			% x character spacing	(_ax, _ay, _cx, _cy follows awidthshow naming convention)
+/_ay 0 def			% y character spacing
+/_cx 0 def			% x word spacing
+/_cy 0 def			% y word spacing
+/_leading [0 0] def
+/_ctm matrix def
+/_mtx matrix def
+/_sp 16#020 def
+/_hyphen (-) def
+/_fScl 0 def
+/_cnt 0 def
+/_hs 1 def
+/_nativeEncoding 0 def
+/_useNativeEncoding 0 def
+/_tempEncode 0 def
+/_pntr 0 def
+% typography operators
+/Tx {} def
+/Tj {} def
+% compound path operators
+/CRender {} def
+% printing
+/_AI3_savepage {} def
+% color operands
+/_gf null def
+/_cf 4 array def
+/_if null def
+/_of false def
+/_fc {} def
+/_gs null def
+/_cs 4 array def
+/_is null def
+/_os false def
+/_sc {} def
+/_i null def
+Adobe_IllustratorA_AI3 begin
+Adobe_IllustratorA_AI3
+	{
+	dup xcheck
+		{
+		bind
+		} if
+	pop pop
+	} forall
+end
+end
+Adobe_IllustratorA_AI3 begin
+Adobe_IllustratorA_AI3_vars begin
+newpath
+} def
+/terminate				% - terminate -
+{
+end
+end
+} def
+% definition operators
+/_					% - _ null
+null def
+/ddef				% key value ddef -
+{
+Adobe_IllustratorA_AI3_vars 3 1 roll put
+} def
+/xput				% key value literal xput -
+{
+dup load dup length exch maxlength eq
+	{
+	dup dup load dup
+	length 2 mul dict copy def
+	} if
+load begin def end
+} def
+/npop				% integer npop -
+{
+	{
+	pop
+	} repeat
+} def
+% marking operators
+/sw					% ax ay string sw x y 
+{
+dup length exch stringwidth
+exch 5 -1 roll 3 index 1 sub mul add
+4 1 roll 3 1 roll 1 sub mul add
+} def
+/swj				% cx cy fillchar ax ay string swj x y
+{
+dup 4 1 roll
+dup length exch stringwidth 
+exch 5 -1 roll 3 index 1 sub mul add
+4 1 roll 3 1 roll 1 sub mul add 
+6 2 roll /_cnt 0 ddef
+{1 index eq {/_cnt _cnt 1 add ddef} if} forall pop
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} def
+/ss					% ax ay string matrix ss -
+{
+4 1 roll
+	{				% matrix ax ay char 0 0 {proc} -
+	2 npop 
+	(0) exch 2 copy 0 exch put pop
+	gsave
+	false charpath currentpoint
+	4 index setmatrix
+	stroke
+	grestore
+	moveto
+	2 copy rmoveto
+	} exch cshow
+3 npop
+} def
+/jss				% cx cy fillchar ax ay string matrix jss -
+{
+4 1 roll
+	{				% cx cy fillchar matrix ax ay char 0 0 {proc} -   
+	2 npop 
+	(0) exch 2 copy 0 exch put 
+	gsave
+	_sp eq 
+		{
+		exch 6 index 6 index 6 index 5 -1 roll widthshow  
+		currentpoint
+		}
+		{
+		false charpath currentpoint
+		4 index setmatrix stroke
+		}ifelse
+	grestore
+	moveto
+	2 copy rmoveto
+	} exch cshow
+6 npop
+} def
+% path operators
+/sp					% ax ay string sp -
+{
+	{
+	2 npop (0) exch
+	2 copy 0 exch put pop
+	false charpath
+	2 copy rmoveto
+	} exch cshow
+2 npop
+} def
+/jsp					% cx cy fillchar ax ay string jsp -
+{
+	{					% cx cy fillchar ax ay char 0 0 {proc} -
+	2 npop 
+	(0) exch 2 copy 0 exch put 
+	_sp eq 
+		{
+		exch 5 index 5 index 5 index 5 -1 roll widthshow  
+		}
+		{
+		false charpath
+		}ifelse
+	2 copy rmoveto
+	} exch cshow
+5 npop
+} def
+% path construction operators
+/pl				% x y pl x y
+{
+transform
+0.25 sub round 0.25 add exch
+0.25 sub round 0.25 add exch
+itransform
+} def
+/setstrokeadjust where
+	{
+	pop true setstrokeadjust
+	/c				% x1 y1 x2 y2 x3 y3 c -
+	{
+	curveto
+	} def
+	/C
+	/c load def
+	/v				% x2 y2 x3 y3 v -
+	{
+	currentpoint 6 2 roll curveto
+	} def
+	/V
+	/v load def
+	/y				% x1 y1 x2 y2 y -
+	{
+	2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l				% x y l -
+	{
+	lineto
+	} def
+	/L
+	/l load def
+	/m				% x y m -
+	{
+	moveto
+	} def
+	}
+	{%else
+	/c
+	{
+	pl curveto
+	} def
+	/C
+	/c load def
+	/v
+	{
+	currentpoint 6 2 roll pl curveto
+	} def
+	/V
+	/v load def
+	/y
+	{
+	pl 2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l
+	{
+	pl lineto
+	} def
+	/L
+	/l load def
+	/m
+	{
+	pl moveto
+	} def
+	}ifelse
+% graphic state operators
+/d					% array phase d -
+{
+setdash
+} def
+/cf	{} def			% - cf flatness
+/i					% flatness i -
+{
+dup 0 eq
+	{
+	pop cf
+	} if
+setflat
+} def
+/j					% linejoin j -
+{
+setlinejoin
+} def
+/J					% linecap J -
+{
+setlinecap
+} def
+/M					% miterlimit M -
+{
+setmiterlimit
+} def
+/w					% linewidth w -
+{
+setlinewidth
+} def
+% path painting operators
+/H					% - H -
+{} def
+/h					% - h -
+{
+closepath
+} def
+/N					% - N -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq {clip /_doClip 0 ddef} if 
+	newpath
+	} 
+	{
+	/CRender {N} ddef
+	}ifelse
+} def
+/n					% - n -
+{N} def
+/F					% - F -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq 
+		{
+		gsave _pf grestore clip newpath /_lp /none ddef _fc 
+		/_doClip 0 ddef
+		}
+		{
+		_pf
+		}ifelse
+	} 
+	{
+	/CRender {F} ddef
+	}ifelse
+} def
+/f					% - f -
+{
+closepath
+F
+} def
+/S					% - S -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq 
+		{
+		gsave _ps grestore clip newpath /_lp /none ddef _sc 
+		/_doClip 0 ddef
+		}
+		{
+		_ps
+		}ifelse
+	} 
+	{
+	/CRender {S} ddef
+	}ifelse
+} def
+/s					% - s -
+{
+closepath
+S
+} def
+/B					% - B -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq 	% F clears _doClip
+	gsave F grestore 
+		{
+		gsave S grestore clip newpath /_lp /none ddef _sc
+		/_doClip 0 ddef
+		} 
+		{
+		S
+		}ifelse
+	}
+	{
+	/CRender {B} ddef
+	}ifelse
+} def
+/b					% - b -
+{
+closepath
+B
+} def
+/W					% - W -
+{
+/_doClip 1 ddef
+} def
+/*					% - [string] * -
+{
+count 0 ne 
+	{
+	dup type (stringtype) eq {pop} if
+	} if 
+_pola 0 eq {newpath} if
+} def
+% group operators
+/u					% - u -
+{} def
+/U					% - U -
+{} def
+/q					% - q -
+{
+_pola 0 eq {gsave} if
+} def
+/Q					% - Q -
+{
+_pola 0 eq {grestore} if
+} def
+/*u					% - *u -
+{
+_pola 1 add /_pola exch ddef
+} def
+/*U					% - *U -
+{
+_pola 1 sub /_pola exch ddef 
+_pola 0 eq {CRender} if
+} def
+/D					% polarized D -
+{pop} def
+/*w					% - *w -
+{} def
+/*W					% - *W -
+{} def
+% place operators
+/`					% matrix llx lly urx ury string ` -
+{
+/_i save ddef
+6 1 roll 4 npop
+concat
+userdict begin
+/showpage {} def
+false setoverprint
+pop
+} def
+/~					% - ~ -
+{
+end
+_i restore
+} def
+% color operators
+/O					% flag O -
+{
+0 ne
+/_of exch ddef
+/_lp /none ddef
+} def
+/R					% flag R -
+{
+0 ne
+/_os exch ddef
+/_lp /none ddef
+} def
+/g					% gray g -
+{
+/_gf exch ddef
+/_fc
+{ 
+_lp /fill ne
+	{
+	_of setoverprint
+	_gf setgray
+	/_lp /fill ddef
+	} if
+} ddef
+/_pf
+{
+_fc
+fill
+} ddef
+/_psf
+{
+_fc
+ashow
+} ddef
+/_pjsf
+{
+_fc
+awidthshow
+} ddef
+/_lp /none ddef
+} def
+/G					% gray G -
+{
+/_gs exch ddef
+/_sc
+{
+_lp /stroke ne
+	{
+	_os setoverprint
+	_gs setgray
+	/_lp /stroke ddef
+	} if
+} ddef
+/_ps
+{
+_sc
+stroke
+} ddef
+/_pss
+{
+_sc
+ss
+} ddef
+/_pjss
+{
+_sc
+jss
+} ddef
+/_lp /none ddef
+} def
+/k					% cyan magenta yellow black k -
+{
+_cf astore pop
+/_fc
+{
+_lp /fill ne
+	{
+	_of setoverprint
+	_cf aload pop setcmykcolor
+	/_lp /fill ddef
+	} if
+} ddef
+/_pf
+{
+_fc
+fill
+} ddef
+/_psf
+{
+_fc
+ashow
+} ddef
+/_pjsf
+{
+_fc
+awidthshow
+} ddef
+/_lp /none ddef
+} def
+/K					% cyan magenta yellow black K -
+{
+_cs astore pop
+/_sc
+{
+_lp /stroke ne
+	{
+	_os setoverprint
+	_cs aload pop setcmykcolor
+	/_lp /stroke ddef
+	} if
+} ddef
+/_ps
+{
+_sc
+stroke
+} ddef
+/_pss
+{
+_sc
+ss
+} ddef
+/_pjss
+{
+_sc
+jss
+} ddef
+/_lp /none ddef
+} def
+/x					% cyan magenta yellow black name gray x -
+{
+/_gf exch ddef
+findcmykcustomcolor
+/_if exch ddef
+/_fc
+{ 
+_lp /fill ne
+	{
+	_of setoverprint
+	_if _gf 1 exch sub setcustomcolor
+	/_lp /fill ddef
+	} if
+} ddef
+/_pf
+{
+_fc
+fill
+} ddef
+/_psf
+{
+_fc
+ashow
+} ddef
+/_pjsf
+{
+_fc
+awidthshow
+} ddef
+/_lp /none ddef
+} def
+/X					% cyan magenta yellow black name gray X -
+{
+/_gs exch ddef
+findcmykcustomcolor
+/_is exch ddef
+/_sc
+{
+_lp /stroke ne
+	{
+	_os setoverprint
+	_is _gs 1 exch sub setcustomcolor
+	/_lp /stroke ddef
+	} if
+} ddef
+/_ps
+{
+_sc
+stroke
+} ddef
+/_pss
+{
+_sc
+ss
+} ddef
+/_pjss
+{
+_sc
+jss
+} ddef
+/_lp /none ddef
+} def
+% locked object operator
+/A					% value A -
+{
+pop
+} def
+currentdict readonly pop end
+setpacking
+% annotate page operator
+/annotatepage
+{
+} def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeFont: Helvetica
+Adobe_cmykcolor /initialize get exec
+Adobe_cshow /initialize get exec
+Adobe_customcolor /initialize get exec
+Adobe_typography_AI3 /initialize get exec
+Adobe_IllustratorA_AI3 /initialize get exec
+[
+39/quotesingle 96/grave 128/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash
+/.notdef/plusminus/.notdef/.notdef/yen/mu/.notdef/.notdef
+/.notdef/.notdef/.notdef/ordfeminine/ordmasculine/.notdef/ae/oslash
+/questiondown/exclamdown/logicalnot/.notdef/florin/.notdef/.notdef
+/guillemotleft/guillemotright/ellipsis/.notdef/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide
+/.notdef/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright
+/fi/fl/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand
+/Acircumflex/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex
+/Idieresis/Igrave/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve/dotaccent/ring/cedilla
+/hungarumlaut/ogonek/caron
+TE
+%AI3_BeginEncoding: _Helvetica Helvetica
+[/_Helvetica/Helvetica 0 0 1 TZ
+%AI3_EndEncoding
+%%EndSetup
+0 A
+0 O
+0 g
+0 i 0 J 0 j 1 w 4 M []0 d
+%AI3_Note:
+0 D
+74.549 85.9724 m
+74.468 81.8413 79.112 79.8973 79.031 76.2793 c
+79.031 75.2802 78.275 72.6882 75.629 72.7422 c
+74.306 72.7692 73.0369 73.6602 73.0639 75.9552 C
+73.0639 77.5753 L
+73.0369 77.7103 73.0369 77.8723 72.9289 78.0073 c
+72.8479 78.0883 72.6859 78.1423 72.5509 78.0883 c
+72.3079 77.9533 72.2539 77.6833 72.1459 77.4673 C
+72.0109 76.7653 71.8489 76.0362 71.7139 75.3342 c
+71.6869 75.2802 71.7679 75.2802 71.7139 75.2802 c
+71.6059 74.7672 71.5249 74.2272 71.4979 73.7142 c
+71.4709 73.3902 71.6869 73.1202 71.9569 72.9582 c
+72.9559 72.4182 74.2249 72.0402 75.629 72.0132 c
+79.058 71.9592 81.8661 74.9562 81.9201 77.8723 c
+81.9471 80.2213 80.6241 81.5713 79.166 83.3264 c
+78.437 84.2444 76.979 85.5134 77.033 87.1874 c
+77.033 88.5374 78.14 90.0495 80.165 90.0225 c
+82.8921 89.9685 82.4601 87.0794 82.5141 85.7564 c
+82.5141 85.6214 82.5141 85.4864 82.6221 85.4324 c
+82.7301 85.3244 82.8921 85.2974 83.0271 85.3514 c
+83.1081 85.4324 83.1621 85.4864 83.1891 85.5674 C
+83.8641 88.1054 L
+83.9721 88.5644 84.1881 89.0235 84.1881 89.5635 c
+84.1881 89.6985 84.0801 89.8335 83.9451 89.9415 c
+82.5141 90.6975 81.6501 90.8055 80.327 90.8325 c
+76.979 90.8865 74.576 88.5104 74.549 85.9724 c
+f
+82.7085 80.9503 m
+82.7085 80.8153 82.8165 80.6803 82.9785 80.6803 c
+83.3295 80.6803 83.5185 81.3823 84.3825 82.5434 C
+84.8685 83.2724 85.4895 83.8394 85.8135 83.8394 c
+86.0565 83.8394 86.0835 83.6504 86.0835 83.4884 c
+86.0835 82.6783 83.0055 76.1982 83.0055 73.6602 c
+83.0055 72.8772 83.3295 72.1212 84.3285 72.1212 c
+86.7045 72.1212 89.2696 75.1182 91.1056 77.8183 c
+91.1866 77.8993 91.2406 77.8993 91.2136 77.7643 c
+90.8356 76.6573 90.2956 74.5512 90.2956 73.2552 c
+90.2956 72.7152 90.4036 72.0672 91.2676 72.0672 c
+93.3736 72.0672 96.1007 76.1982 96.1007 77.1703 c
+96.1007 77.3323 96.0467 77.4943 95.8577 77.4943 c
+95.5337 77.4943 95.4257 76.9543 95.0747 76.3602 c
+94.4267 75.3342 93.3736 73.9842 92.8606 73.9842 c
+92.6716 73.9842 92.6716 74.2002 92.6716 74.3622 c
+92.6716 75.7392 95.9657 84.7304 95.9657 85.0004 c
+95.9657 85.2164 95.9387 85.3514 95.6147 85.3514 c
+95.3987 85.3514 95.0477 85.3784 94.5617 85.3784 c
+93.6707 85.3784 93.6167 85.2434 93.5356 85.0814 c
+93.1036 84.2444 92.4556 81.5713 91.1596 79.2223 c
+89.4046 76.1712 87.0285 73.7682 86.0295 73.7682 c
+85.6785 73.7682 85.4625 74.0382 85.4625 74.4432 c
+85.4625 75.7932 88.7296 82.7863 88.7296 84.4874 c
+88.7296 84.8924 88.5136 85.7024 87.5415 85.7024 c
+84.9225 85.7024 82.7085 81.4363 82.7085 80.9503 c
+f
+107.4212 85.6754 m
+104.8022 85.6754 102.0211 81.5173 101.0761 80.1133 c
+101.0221 79.9783 100.9951 80.0323 101.0221 80.1403 c
+101.4811 81.8143 102.0211 83.2994 102.0211 84.4064 c
+102.0211 85.0814 101.6971 85.7564 100.8331 85.7564 c
+98.9971 85.7564 96.3241 82.1383 96.3241 81.2473 c
+96.3241 81.0583 96.3781 80.9233 96.513 80.9233 c
+96.8371 80.9233 97.1071 81.5443 97.5931 82.1923 c
+98.2141 82.9483 98.9701 83.9204 99.4291 83.9204 c
+99.5101 83.9204 99.5911 83.8664 99.5911 83.5964 c
+99.5911 82.4623 97.2691 76.0632 96.297 72.8772 c
+96.189 72.5262 96.405 72.4452 97.4311 72.4452 c
+98.1601 72.4452 98.5111 72.3372 98.6461 72.9042 c
+99.2401 75.0372 100.3471 77.4133 101.5621 79.4923 c
+102.6691 81.4363 105.0452 84.2444 106.3682 84.2444 c
+106.6652 84.2444 106.8542 84.0284 106.8542 83.5694 c
+106.8542 82.2193 103.3982 75.7662 103.5062 73.3092 c
+103.5332 72.6072 103.7762 72.0942 104.6672 72.0942 c
+106.7192 72.0942 108.5282 74.9562 109.3652 76.4682 c
+109.5003 76.7113 109.7163 76.9813 109.5273 77.2783 c
+109.4733 77.3863 109.3652 77.4403 109.2303 77.4403 c
+109.1492 77.4403 109.0683 77.3593 109.0143 77.2783 c
+108.4472 76.2793 107.2052 74.0922 106.3682 74.0382 c
+106.2062 74.0382 106.1252 74.2002 106.1252 74.3352 c
+106.1252 75.3072 109.1492 81.5983 109.1492 83.7314 c
+109.1492 85.1624 108.3662 85.6754 107.4212 85.6754 c
+f
+132.2309 90.2925 m
+131.5829 90.2925 130.6109 90.3465 130.5299 90.2385 c
+127.9918 85.8374 126.0208 82.4893 122.9157 77.7103 c
+122.8347 77.4943 122.8077 77.5483 122.8077 77.7103 c
+123.0777 82.0303 122.7537 86.1074 122.8347 90.0225 c
+122.8347 90.3735 122.5647 90.3735 122.2137 90.3735 c
+121.3497 90.3735 121.1877 90.3465 120.5667 90.3465 c
+119.7297 90.3195 119.2707 90.3465 118.4607 90.3465 c
+117.8667 90.3465 117.7317 90.3465 117.7317 89.8605 c
+117.7317 89.4825 118.1907 89.4825 118.6227 89.4555 c
+119.0817 89.4285 119.4867 89.4285 119.4867 89.0504 c
+119.4867 88.5374 118.9737 87.2414 118.1637 84.8654 c
+117.2187 81.7603 115.6796 77.7643 114.4106 74.2002 c
+114.2756 73.9032 114.1136 73.3362 113.3036 73.1742 c
+112.6826 72.9852 112.4396 72.9042 112.4396 72.4992 c
+112.4396 72.3372 112.6286 72.2562 112.7906 72.2562 c
+113.0606 72.2562 113.6816 72.4452 114.9506 72.4452 c
+116.3276 72.4452 116.7867 72.2832 117.0296 72.2832 c
+117.2187 72.2832 117.5697 72.4182 117.5697 72.7152 c
+117.5697 73.0662 117.2187 73.0662 116.8676 73.0662 c
+116.3276 73.1202 115.6796 73.2012 115.6796 74.0922 c
+115.6796 74.7672 118.2177 82.7054 120.1077 87.7004 c
+120.1347 87.8354 120.1887 87.8084 120.2157 87.6734 c
+120.2157 87.2684 120.1887 80.9773 120.2427 73.0662 c
+120.2427 72.2562 120.9177 72.4992 121.0797 72.7422 c
+124.2658 78.1693 126.4528 81.7333 129.9359 87.4574 c
+130.0979 87.7274 130.2059 87.7004 130.1249 87.4034 c
+128.6668 81.8143 128.0458 79.4923 126.6958 74.7672 c
+126.3988 73.7412 126.1288 73.5522 125.5618 73.3362 c
+125.1568 73.1742 124.1308 73.2552 124.1308 72.6072 c
+124.1308 72.3912 124.3738 72.3102 124.5628 72.3102 c
+124.7518 72.3102 125.4808 72.4452 126.8038 72.4452 c
+128.8288 72.4452 129.8549 72.2832 130.2599 72.2832 c
+130.7729 72.2832 130.7999 72.7152 130.7999 72.8232 c
+130.7999 73.3902 129.3689 72.8502 129.3689 73.8222 c
+129.3689 73.9842 130.7999 79.7083 131.8799 84.0284 c
+132.5009 86.6474 133.0409 88.8074 133.2569 89.0504 c
+133.7699 89.6445 135.0119 89.3204 135.0119 90.1035 c
+135.0119 90.3195 134.8229 90.3735 134.6339 90.3735 c
+134.3639 90.3735 134.3099 90.2925 132.2309 90.2925 c
+f
+137.6143 88.3754 m
+137.6143 87.4574 138.0733 87.0794 138.6944 87.0794 c
+139.8284 87.0794 140.4224 88.8344 140.4224 89.4825 c
+140.4224 90.0765 140.0984 90.7515 139.4234 90.7515 c
+138.3703 90.7515 137.6143 89.2395 137.6143 88.3754 c
+f
+132.8083 81.0583 m
+132.8083 80.8693 132.9433 80.7613 133.1323 80.7613 c
+133.2943 80.7613 133.6993 81.5983 134.2393 82.2463 c
+134.8603 82.9483 135.5083 83.7314 135.8593 83.7314 c
+135.9403 83.7314 136.0753 83.6504 136.0753 83.4884 c
+136.0753 82.9483 135.2383 81.1663 134.6173 79.3843 c
+134.2933 78.6013 133.9963 77.8723 133.7263 77.0893 c
+133.1863 75.4962 132.7812 73.9842 132.7812 73.2552 c
+132.7812 72.8232 132.8893 72.1212 133.7533 72.1212 c
+135.6703 72.1212 138.7213 76.0632 138.7213 77.1703 c
+138.7213 77.3323 138.6404 77.4403 138.5323 77.4403 c
+138.1813 77.4403 138.0193 76.8463 137.6683 76.2793 c
+137.1553 75.4422 136.1833 74.2542 135.6703 74.2542 c
+135.5083 74.2542 135.5083 74.3352 135.5083 74.4432 c
+135.5083 75.0912 136.8583 78.4933 137.8033 81.1663 c
+138.3163 82.5434 138.7213 83.5964 138.7213 84.4064 c
+138.7213 85.1624 138.2893 85.6484 137.6683 85.6484 c
+135.6703 85.6484 132.8083 81.7333 132.8083 81.0583 c
+f
+147.4814 85.7564 m
+142.8913 85.7564 139.6513 80.0053 139.6513 76.4682 c
+139.6513 74.1732 140.8663 72.1212 143.0263 72.1212 c
+146.0504 72.1212 148.3184 76.4682 148.3184 77.2783 c
+148.3184 77.4673 148.2374 77.5483 148.1294 77.5483 c
+147.6704 77.5483 147.4004 76.4682 146.6714 75.5772 c
+145.9964 74.7132 145.2134 73.9032 143.9984 73.9032 c
+142.9993 73.9032 142.3243 74.7942 142.3243 76.4682 c
+142.3243 79.4653 144.4844 84.8654 146.4284 84.8654 c
+147.1574 84.8654 147.1844 84.2174 147.2654 83.4884 c
+147.3464 82.6783 147.5894 81.9493 148.4264 81.9493 c
+149.3444 81.9493 149.7224 82.9483 149.7224 83.7584 c
+149.7224 85.2704 148.4534 85.7564 147.4814 85.7564 c
+f
+150.0002 81.0313 m
+150.0002 80.8693 150.1082 80.6533 150.2702 80.6533 c
+150.6482 80.6533 150.7562 81.1663 151.0802 81.6793 c
+151.6743 82.6243 152.5113 83.7584 152.8893 83.7584 c
+152.9703 83.7584 153.0243 83.7044 153.0243 83.5424 c
+153.0243 82.3813 151.0262 75.9552 150.1082 72.8232 c
+150.0272 72.4992 150.2162 72.4182 151.2153 72.4182 c
+151.7823 72.4182 152.3493 72.3372 152.4573 72.6882 c
+153.7803 77.0083 156.7503 83.4884 157.5874 83.4884 c
+157.6414 83.4884 157.7224 83.4344 157.7224 83.2184 c
+157.7224 83.1104 157.5603 82.7863 157.5603 82.4083 c
+157.5603 82.0033 157.8844 81.5443 158.4514 81.5443 c
+159.3154 81.5443 160.3414 82.6243 160.3414 84.2984 c
+160.3414 85.0274 160.0174 85.8374 159.0994 85.8374 c
+157.0203 85.8374 155.5083 81.9223 154.4283 79.6273 c
+154.3743 79.5193 154.3203 79.4653 154.3473 79.6273 c
+155.0223 82.3273 155.4543 83.4344 155.4543 84.4064 c
+155.4543 85.0814 155.3463 85.7024 154.3743 85.7024 c
+152.4303 85.7024 150.0002 81.8683 150.0002 81.0313 c
+f
+*u
+159.4598 77.0083 m
+159.4868 75.0912 160.3778 71.9592 163.5909 72.0132 c
+167.4249 72.0672 170.962 76.5762 170.881 80.9233 c
+170.8 85.2164 167.7489 85.9454 166.5069 85.9184 c
+163.8339 85.8644 159.3518 82.8403 159.4598 77.0083 c
+f
+168.532 82.7323 m
+168.5589 79.9513 166.7769 72.8502 163.5639 72.7962 c
+162.0518 72.7692 161.7278 74.0652 161.7008 75.2262 c
+161.6468 78.4933 163.7259 85.0814 166.6149 85.1354 c
+167.8029 85.1624 168.5049 84.2984 168.532 82.7323 c
+f
+*U
+178.2601 76.1712 m
+178.2601 79.0333 174.993 81.1123 174.993 83.1374 c
+174.993 83.8934 175.479 84.8654 176.451 84.8654 c
+176.802 84.8654 177.261 84.5954 177.504 84.2984 c
+177.9361 83.8124 178.2601 83.1104 178.4491 82.5434 c
+178.6111 82.1113 178.6651 81.8143 178.9351 81.8143 c
+179.5291 81.8143 179.6101 82.4353 179.7991 83.0564 c
+179.9611 83.6504 180.0961 84.0824 180.0961 84.4604 c
+180.0961 85.1354 178.2871 85.7294 177.153 85.7294 c
+175.101 85.7294 172.887 83.9204 172.887 81.5443 c
+172.887 78.8983 175.938 77.1973 175.938 75.0372 c
+175.938 73.9842 175.398 72.9042 174.426 72.9042 c
+173.292 72.9042 172.752 73.9842 172.374 75.0102 c
+172.104 75.8472 171.996 76.7113 171.483 76.7113 c
+170.6459 76.7113 170.5379 74.0112 170.5379 73.6602 c
+170.5379 72.9312 172.077 72.0942 173.751 72.0942 c
+176.424 72.0942 178.2601 74.2272 178.2601 76.1712 c
+f
+180.646 68.7461 m
+179.728 68.7461 180.376 70.5552 178.891 70.5282 c
+178.27 70.5282 177.649 69.9612 177.649 68.9891 c
+177.676 67.6391 178.783 67.2341 179.35 67.2611 c
+181.078 67.2611 182.374 68.8541 183.8321 70.5822 c
+184.0211 70.8522 185.8301 73.2552 186.4241 74.0922 c
+189.7451 78.5743 191.4192 81.7873 191.3922 84.1364 c
+191.3922 85.5134 190.7172 85.6484 190.3392 85.6484 c
+189.7451 85.6484 189.1241 85.0544 189.1241 84.0824 c
+189.1511 83.1374 189.6102 82.7323 189.6102 81.7063 c
+189.6371 79.3303 185.3711 73.6602 185.2091 73.6872 c
+185.0741 73.7412 185.8031 75.6312 185.7761 79.8433 c
+185.7491 82.5703 185.3441 85.5674 183.8861 85.5404 c
+182.023 85.5134 180.484 82.6783 180.106 81.4363 c
+180.052 81.2473 179.89 80.9773 180.025 80.7073 c
+180.079 80.6533 180.16 80.6263 180.241 80.5993 c
+180.403 80.5993 180.511 80.7073 180.538 80.7883 c
+180.97 81.7333 181.321 82.5434 181.915 83.3804 c
+182.131 83.5964 182.239 83.9204 182.563 83.9474 c
+182.833 83.9204 182.941 83.5964 182.995 83.3804 c
+183.076 83.0294 183.373 81.7063 183.4001 79.5193 c
+183.427 75.2802 182.806 72.3372 182.239 70.2312 c
+182.131 69.9612 181.753 68.7461 180.646 68.7461 c
+f
+197.8528 76.1712 m
+197.8528 79.0333 194.5858 81.1123 194.5858 83.1374 c
+194.5858 83.8934 195.0718 84.8654 196.0438 84.8654 c
+196.3948 84.8654 196.8538 84.5954 197.0968 84.2984 c
+197.5288 83.8124 197.8528 83.1104 198.0418 82.5434 c
+198.2038 82.1113 198.2578 81.8143 198.5278 81.8143 c
+199.1219 81.8143 199.2029 82.4353 199.3919 83.0564 c
+199.5539 83.6504 199.6889 84.0824 199.6889 84.4604 c
+199.6889 85.1354 197.8798 85.7294 196.7458 85.7294 c
+194.6938 85.7294 192.4798 83.9204 192.4798 81.5443 c
+192.4798 78.8983 195.5308 77.1973 195.5308 75.0372 c
+195.5308 73.9842 194.9908 72.9042 194.0188 72.9042 c
+192.8848 72.9042 192.3447 73.9842 191.9667 75.0102 c
+191.6967 75.8472 191.5887 76.7113 191.0757 76.7113 c
+190.2387 76.7113 190.1307 74.0112 190.1307 73.6602 c
+190.1307 72.9312 191.6697 72.0942 193.3438 72.0942 c
+196.0168 72.0942 197.8528 74.2272 197.8528 76.1712 c
+f
+204.2888 89.2664 m
+204.1268 89.2395 204.0458 89.0775 204.0458 89.0504 c
+203.7488 88.0784 203.0468 86.0264 202.8308 85.4594 c
+202.7768 85.3784 202.7498 85.3784 202.6418 85.3784 c
+202.5608 85.3514 201.8048 85.3244 201.2378 85.3244 c
+200.8598 85.3244 200.6168 85.0004 200.6168 84.5414 c
+200.6168 84.4604 200.7788 84.3794 200.9138 84.3794 c
+201.3728 84.3794 202.1828 84.3794 202.2368 84.3794 c
+202.2908 84.3794 202.4258 84.3794 202.4258 84.2444 c
+202.4258 83.7584 199.4558 75.6852 199.4558 73.6602 c
+199.4558 73.0392 199.6718 72.1482 200.6708 72.1482 c
+202.7768 72.1482 205.5039 76.3062 205.5039 77.1433 c
+205.5039 77.4403 205.3419 77.4943 205.2069 77.4943 c
+204.9639 77.4943 204.8289 77.0893 204.5589 76.6573 c
+203.9918 75.6852 202.9928 74.1192 202.2908 74.1192 c
+202.1288 74.1192 202.0478 74.2272 202.0478 74.3892 c
+202.0478 75.5502 203.8028 80.5723 204.9639 84.3254 C
+204.9639 84.3524 205.0179 84.3794 205.0989 84.3794 c
+205.3959 84.3794 206.2059 84.4064 206.8269 84.4064 c
+207.0429 84.4064 207.2319 84.4334 207.3669 84.5954 c
+207.5289 84.7574 207.6099 84.9734 207.6099 85.0814 c
+207.6099 85.1354 207.5829 85.2704 207.4479 85.3514 c
+207.2589 85.3784 206.2599 85.3784 205.3689 85.3784 c
+205.3149 85.3784 205.2879 85.4324 205.2879 85.5134 c
+205.2879 85.6214 206.3139 88.6994 206.3139 89.1315 c
+206.3139 89.2395 206.2599 89.2664 206.2059 89.2664 c
+206.0979 89.2935 205.8009 89.3204 205.7199 89.3204 c
+205.3959 89.3204 204.6398 89.2935 204.2888 89.2664 c
+f
+*u
+213.749 85.5674 m
+210.5629 85.5674 206.5939 81.1393 206.5939 76.6573 c
+206.5939 75.0372 207.2149 72.0672 209.7259 72.0672 c
+210.8059 72.0672 211.859 72.7422 212.804 73.6872 c
+214.073 74.9022 214.964 76.6033 214.964 77.1163 c
+214.964 77.1973 214.937 77.4403 214.667 77.4403 c
+214.343 77.4403 214.289 76.8193 213.479 75.7122 c
+212.75 74.7402 211.67 73.7682 210.6979 73.7682 c
+210.0499 73.7682 209.1049 74.3082 209.1049 76.2793 c
+209.1049 76.9813 209.2129 77.6023 209.2939 77.7913 c
+209.3749 77.9533 211.427 78.0343 213.263 78.7903 c
+214.883 79.4653 216.314 80.7073 216.314 82.7054 c
+216.314 84.4334 215.18 85.5674 213.749 85.5674 c
+f
+214.154 83.5694 m
+214.154 82.2733 213.56 80.7343 212.669 79.9513 c
+211.5079 78.9253 209.9689 78.6013 209.5369 78.6013 c
+209.4829 78.6013 209.4559 78.6283 209.4559 78.6553 C
+209.4559 79.6813 211.427 84.8654 213.236 84.8654 c
+213.614 84.8654 214.154 84.6764 214.154 83.5694 c
+f
+*U
+227.0983 83.5694 m
+227.0983 82.4083 224.6953 75.9822 223.7502 72.7962 c
+223.6692 72.4722 223.8582 72.3912 224.8843 72.3912 c
+225.5863 72.3912 225.9103 72.2832 226.0453 72.8232 c
+226.6393 74.9292 227.6653 77.1973 228.8533 79.2493 c
+229.9603 81.1393 232.1474 84.0824 233.4434 84.0824 c
+233.5784 84.0824 233.9834 84.0014 233.9834 83.4884 c
+233.9834 81.9223 230.6893 75.8202 230.6893 73.2282 c
+230.6893 72.5532 230.9594 72.0402 231.7964 72.0402 c
+234.0374 72.0402 236.6564 76.2253 236.6564 76.9543 c
+236.6564 77.2243 236.4944 77.3053 236.3594 77.3053 c
+236.2784 77.3053 236.1704 77.2243 236.1164 77.1433 c
+235.4954 75.9552 234.2264 73.9842 233.4974 73.9842 c
+233.3354 73.9842 233.2544 74.1732 233.2544 74.3082 c
+233.2544 75.5772 236.2244 81.4093 236.2244 83.5154 c
+236.2244 84.9194 235.4684 85.4324 234.5504 85.4324 c
+231.9314 85.4324 229.4203 81.4903 228.5023 80.1133 c
+228.4213 79.9783 228.4213 80.0323 228.4213 80.1133 c
+228.8803 81.7873 229.3663 82.9754 229.3663 84.0554 c
+229.3663 84.7304 228.9343 85.5134 227.9083 85.5134 c
+225.2623 85.5134 222.7782 81.3283 221.8602 79.9243 c
+221.7792 79.8163 221.7522 79.8703 221.7792 79.9513 c
+222.2382 81.5983 222.7782 83.0834 222.7782 84.1634 c
+222.7782 84.8384 222.4542 85.5404 221.5902 85.5404 c
+219.5112 85.5404 217.1081 81.8143 217.1081 81.0853 c
+217.1081 80.8963 217.2161 80.7613 217.3241 80.7613 c
+217.6211 80.7613 217.8911 81.3823 218.3502 81.9763 c
+218.9712 82.7863 219.7542 83.7854 220.1862 83.7854 c
+220.2672 83.7854 220.3212 83.6234 220.3212 83.4074 c
+220.3212 82.2463 218.0531 75.9822 217.1351 72.7962 C
+217.0271 72.4722 217.2431 72.3912 218.2422 72.3912 c
+219.0522 72.3912 219.2682 72.2832 219.4302 72.8232 c
+220.9692 77.7913 223.1022 80.9233 224.7493 82.7323 c
+225.5323 83.5964 226.0453 84.1364 226.6123 84.1364 c
+227.0173 84.1364 227.0983 83.7854 227.0983 83.5694 c
+f
+244.7112 76.1712 m
+244.7112 79.0333 241.4442 81.1123 241.4442 83.1374 c
+241.4442 83.8934 241.9302 84.8654 242.9022 84.8654 c
+243.2532 84.8654 243.7122 84.5954 243.9552 84.2984 c
+244.3872 83.8124 244.7112 83.1104 244.9002 82.5434 c
+245.0622 82.1113 245.1162 81.8143 245.3862 81.8143 c
+245.9803 81.8143 246.0612 82.4353 246.2503 83.0564 c
+246.4123 83.6504 246.5473 84.0824 246.5473 84.4604 c
+246.5473 85.1354 244.7382 85.7294 243.6042 85.7294 c
+241.5522 85.7294 239.3382 83.9204 239.3382 81.5443 c
+239.3382 78.8983 242.3892 77.1973 242.3892 75.0372 c
+242.3892 73.9842 241.8492 72.9042 240.8772 72.9042 c
+239.7431 72.9042 239.2031 73.9842 238.8251 75.0102 c
+238.5551 75.8472 238.4471 76.7113 237.9341 76.7113 c
+237.0971 76.7113 236.9891 74.0112 236.9891 73.6602 c
+236.9891 72.9312 238.5281 72.0942 240.2022 72.0942 c
+242.8752 72.0942 244.7112 74.2272 244.7112 76.1712 c
+f
+74.2134 67.0304 m
+74.2134 66.6853 74.6505 66.6853 75.0645 66.6163 C
+75.3636 66.5013 75.6166 66.3403 75.6166 66.0183 c
+75.6166 65.8112 74.2134 61.2567 73.0403 57.4613 c
+72.5343 55.8051 72.2352 54.2179 71.7062 53.2058 c
+71.3841 52.4697 69.8199 52.8838 69.8199 52.2167 c
+69.8199 51.9177 70.05 51.9407 70.211 51.9407 c
+70.51 51.9407 71.2001 52.0327 73.0633 52.0327 c
+73.9834 52.0327 78.4919 51.9177 79.044 51.9177 c
+79.458 51.9177 79.55 52.0327 79.6421 52.3087 c
+79.9871 53.4588 80.7002 55.5751 80.7002 55.9891 c
+80.7002 56.0811 80.7002 56.2882 80.4241 56.2882 c
+80.0331 56.2882 79.8721 55.5751 79.458 54.816 c
+79.136 54.2179 78.745 53.6889 78.2619 53.3668 c
+77.2268 52.7228 75.5476 52.6998 75.1335 52.6998 c
+74.5585 52.6998 74.2365 52.8148 74.2365 53.0448 c
+74.2365 53.3668 76.5367 60.7737 77.6868 64.8221 c
+78.0089 66.0183 78.3309 66.5013 79.021 66.6163 c
+79.55 66.6624 80.0331 66.6163 80.0331 67.0764 c
+80.0331 67.1684 80.0331 67.3984 79.7111 67.3984 c
+79.504 67.3984 78.3769 67.3064 77.3418 67.3064 c
+76.8127 67.3064 74.9265 67.3984 74.7655 67.3984 c
+74.2825 67.3984 74.2134 67.1224 74.2134 67.0304 c
+f
+*u
+90.4499 62.5909 m
+90.3349 62.5909 89.7828 63.1429 88.8627 63.1429 c
+86.1484 63.1429 81.4329 58.6114 81.4329 53.9649 c
+81.4329 52.4697 82.238 51.7796 82.9971 51.7796 c
+84.3772 51.7796 85.9414 53.2288 87.3446 55.115 C
+87.6206 55.4371 87.9656 56.0351 88.2877 56.4722 c
+88.4257 56.6332 88.4487 56.6562 88.4027 56.4262 c
+88.1266 55.023 87.7356 54.1949 87.7356 53.0678 c
+87.7356 52.6308 87.8046 52.3317 87.9426 52.1477 c
+88.1496 51.8947 88.4717 51.8717 Y
+90.4039 51.8717 92.5892 55.5061 92.5892 56.1041 c
+92.5892 56.2882 92.4971 56.3802 92.4051 56.3802 c
+92.3131 56.3802 92.1751 56.3572 92.1061 56.2192 c
+91.393 55.069 90.864 54.1719 90.3119 53.6889 c
+90.2429 53.6199 90.1049 53.5278 89.9438 53.5278 C
+89.9209 53.5278 89.8288 53.5739 89.8288 53.7579 c
+89.8288 54.977 92.6582 63.0739 92.6582 63.166 c
+92.6582 63.442 92.0371 63.396 91.7381 63.396 c
+91.577 63.396 90.956 63.35 90.841 63.281 C
+90.7259 63.1429 90.6109 62.5909 90.4499 62.5909 c
+f
+90.0359 61.4408 m
+90.0359 60.8887 89.1618 59.0945 88.2187 57.4613 c
+86.9765 55.3451 85.1133 53.5278 84.3082 53.5278 c
+83.8482 53.5278 83.6411 53.9649 83.6411 54.494 c
+83.6411 55.8281 85.9644 62.4529 89.1158 62.4529 c
+89.2538 62.4529 90.0359 62.4299 90.0359 61.4408 c
+f
+*U
+*u
+103.5117 60.3596 m
+103.5117 61.6708 103.0287 63.649 101.1655 63.649 c
+98.9572 63.649 96.91 59.7386 96.5649 59.1865 C
+96.4959 59.1175 96.4499 59.0715 96.4729 59.2325 c
+97.117 61.6708 98.2671 65.1442 98.8192 66.8924 c
+99.0262 67.5594 99.2102 67.9505 99.2102 68.1345 c
+99.2102 68.3645 99.0492 68.4335 99.0032 68.4335 c
+98.6582 68.4335 98.2441 67.9045 97.094 67.7435 c
+96.841 67.6975 96.4959 67.6515 96.1739 67.6285 c
+95.6908 67.6055 95.3918 67.4674 95.3918 67.2374 c
+95.3918 66.6853 96.4269 67.2834 96.4269 66.3173 c
+96.4269 65.8573 96.1739 65.2132 95.8979 64.2701 c
+94.8857 60.7507 93.2986 56.5642 93.2986 54.678 c
+93.2986 52.4697 94.7017 51.6876 96.2889 51.6876 c
+100.1073 51.6876 103.5117 56.4492 103.5117 60.3596 c
+f
+94.8857 53.6659 m
+94.8857 56.1041 98.4742 61.9698 100.2684 61.9698 c
+100.5904 61.9698 101.3035 61.8318 101.3035 60.7507 c
+101.3035 57.8754 98.5662 52.3777 96.1279 52.3777 c
+95.1388 52.3777 94.8857 53.0448 94.8857 53.6659 c
+f
+*U
+*u
+104.1041 55.9201 m
+104.1271 54.2869 104.8862 51.6186 107.6235 51.6646 c
+110.8899 51.7106 113.9032 55.5521 113.8342 59.2555 c
+113.7652 62.9129 111.1659 63.534 110.1078 63.511 c
+107.8305 63.465 104.0121 60.8887 104.1041 55.9201 c
+f
+111.833 60.7967 m
+111.856 58.4274 110.3378 52.3777 107.6005 52.3317 c
+106.3123 52.3087 106.0363 53.4128 106.0133 54.4019 c
+105.9673 57.1853 107.7385 62.7979 110.1998 62.8439 c
+111.2119 62.8669 111.81 62.1308 111.833 60.7967 c
+f
+*U
+114.6107 59.3475 m
+114.6107 59.2095 114.7027 59.0255 114.8408 59.0255 c
+115.1628 59.0255 115.2548 59.4625 115.5308 59.8996 c
+116.0369 60.7047 116.75 61.6708 117.072 61.6708 c
+117.141 61.6708 117.187 61.6248 117.187 61.4868 c
+117.187 60.4977 115.4848 55.023 114.7027 52.3547 c
+114.6337 52.0787 114.7948 52.0097 115.6459 52.0097 c
+116.1289 52.0097 116.612 51.9407 116.704 52.2397 c
+117.8311 55.9201 120.3614 61.4408 121.0745 61.4408 c
+121.1205 61.4408 121.1895 61.3947 121.1895 61.2107 c
+121.1895 61.1187 121.0515 60.8427 121.0515 60.5206 c
+121.0515 60.1756 121.3275 59.7846 121.8106 59.7846 c
+122.5466 59.7846 123.4207 60.7047 123.4207 62.1308 c
+123.4207 62.7519 123.1447 63.442 122.3626 63.442 c
+120.5914 63.442 119.3033 60.1066 118.3832 58.1514 c
+118.3372 58.0594 118.2912 58.0134 118.3142 58.1514 c
+118.8892 60.4516 119.2573 61.3947 119.2573 62.2228 c
+119.2573 62.7979 119.1653 63.327 118.3372 63.327 c
+116.681 63.327 114.6107 60.0606 114.6107 59.3475 c
+f
+*u
+130.3855 62.5909 m
+130.2704 62.5909 129.7184 63.1429 128.7983 63.1429 c
+126.084 63.1429 121.3684 58.6114 121.3684 53.9649 c
+121.3684 52.4697 122.1735 51.7796 122.9326 51.7796 c
+124.3128 51.7796 125.8769 53.2288 127.2801 55.115 C
+127.5561 55.4371 127.9012 56.0351 128.2232 56.4722 c
+128.3612 56.6332 128.3842 56.6562 128.3382 56.4262 c
+128.0622 55.023 127.6711 54.1949 127.6711 53.0678 c
+127.6711 52.6308 127.7402 52.3317 127.8782 52.1477 c
+128.0852 51.8947 128.4072 51.8717 Y
+130.3394 51.8717 132.5247 55.5061 132.5247 56.1041 c
+132.5247 56.2882 132.4327 56.3802 132.3407 56.3802 c
+132.2487 56.3802 132.1107 56.3572 132.0416 56.2192 c
+131.3286 55.069 130.7995 54.1719 130.2474 53.6889 c
+130.1784 53.6199 130.0404 53.5278 129.8794 53.5278 C
+129.8564 53.5278 129.7644 53.5739 129.7644 53.7579 c
+129.7644 54.977 132.5937 63.0739 132.5937 63.166 c
+132.5937 63.442 131.9726 63.396 131.6736 63.396 c
+131.5126 63.396 130.8915 63.35 130.7765 63.281 C
+130.6615 63.1429 130.5465 62.5909 130.3855 62.5909 c
+f
+129.9714 61.4408 m
+129.9714 60.8887 129.0973 59.0945 128.1542 57.4613 c
+126.9121 55.3451 125.0488 53.5278 124.2438 53.5278 c
+123.7837 53.5278 123.5767 53.9649 123.5767 54.494 c
+123.5767 55.8281 125.8999 62.4529 129.0513 62.4529 c
+129.1893 62.4529 129.9714 62.4299 129.9714 61.4408 c
+f
+*U
+136.9375 66.3633 m
+136.7995 66.3403 136.7305 66.2023 136.7305 66.1793 C
+136.4775 65.3512 135.8794 63.603 135.6954 63.1199 c
+135.6494 63.0509 135.6264 63.0509 135.5344 63.0509 c
+135.4654 63.0279 134.8213 63.0049 134.3382 63.0049 c
+134.0162 63.0049 133.8092 62.7289 133.8092 62.3379 c
+133.8092 62.2688 133.9472 62.1998 134.0622 62.1998 c
+134.4532 62.1998 135.1433 62.1998 135.1893 62.1998 C
+135.2353 62.1998 135.3503 62.1998 135.3503 62.0848 c
+135.3503 61.6708 132.8201 54.793 132.8201 53.0678 c
+132.8201 52.5387 133.0041 51.7796 133.8552 51.7796 c
+135.6494 51.7796 137.9726 55.3221 137.9726 56.0351 c
+137.9726 56.2882 137.8346 56.3342 137.7196 56.3342 c
+137.5126 56.3342 137.3976 55.9891 137.1676 55.6211 c
+136.6845 54.793 135.8334 53.4588 135.2353 53.4588 c
+135.0973 53.4588 135.0283 53.5509 135.0283 53.6889 c
+135.0283 54.678 136.5235 58.9565 137.5126 62.1538 c
+137.5126 62.1768 137.5586 62.1998 137.6276 62.1998 c
+137.8806 62.1998 138.5707 62.2228 139.0998 62.2228 c
+139.2838 62.2228 139.4448 62.2458 139.5598 62.3839 c
+139.6978 62.5219 139.7668 62.7059 139.7668 62.7979 c
+139.7668 62.8439 139.7439 62.9589 139.6288 63.0279 c
+139.4678 63.0509 138.6167 63.0509 137.8576 63.0509 c
+137.8116 63.0509 137.7886 63.0969 137.7886 63.166 c
+137.7886 63.258 138.6627 65.8803 138.6627 66.2483 c
+138.6627 66.3403 138.6167 66.3633 138.5707 66.3633 c
+138.4787 66.3863 138.2257 66.4093 138.1567 66.4093 c
+137.8806 66.4093 137.2366 66.3863 136.9375 66.3633 c
+f
+*u
+139.1656 55.9201 m
+139.1886 54.2869 139.9477 51.6186 142.685 51.6646 c
+145.9514 51.7106 148.9647 55.5521 148.8957 59.2555 c
+148.8267 62.9129 146.2274 63.534 145.1693 63.511 c
+142.892 63.465 139.0736 60.8887 139.1656 55.9201 c
+f
+146.8945 60.7967 m
+146.9175 58.4274 145.3993 52.3777 142.662 52.3317 c
+141.3739 52.3087 141.0978 53.4128 141.0748 54.4019 c
+141.0288 57.1853 142.8 62.7979 145.2613 62.8439 c
+146.2734 62.8669 146.8715 62.1308 146.8945 60.7967 c
+f
+*U
+149.9025 59.3475 m
+149.9025 59.2095 149.9945 59.0255 150.1325 59.0255 c
+150.4545 59.0255 150.5466 59.4625 150.8226 59.8996 c
+151.3286 60.7047 152.0417 61.6708 152.3638 61.6708 c
+152.4328 61.6708 152.4788 61.6248 152.4788 61.4868 c
+152.4788 60.4977 150.7766 55.023 149.9945 52.3547 c
+149.9255 52.0787 150.0865 52.0097 150.9376 52.0097 c
+151.4207 52.0097 151.9037 51.9407 151.9957 52.2397 c
+153.1228 55.9201 155.6531 61.4408 156.3662 61.4408 c
+156.4122 61.4408 156.4812 61.3947 156.4812 61.2107 c
+156.4812 61.1187 156.3432 60.8427 156.3432 60.5206 c
+156.3432 60.1756 156.6192 59.7846 157.1023 59.7846 c
+157.8384 59.7846 158.7125 60.7047 158.7125 62.1308 c
+158.7125 62.7519 158.4365 63.442 157.6544 63.442 c
+155.8832 63.442 154.595 60.1066 153.6749 58.1514 c
+153.6289 58.0594 153.5829 58.0134 153.6059 58.1514 c
+154.181 60.4516 154.549 61.3947 154.549 62.2228 c
+154.549 62.7979 154.457 63.327 153.6289 63.327 c
+151.9727 63.327 149.9025 60.0606 149.9025 59.3475 c
+f
+163.2633 65.6042 m
+163.2633 64.8221 163.6544 64.5001 164.1834 64.5001 c
+165.1495 64.5001 165.6556 65.9953 165.6556 66.5473 c
+165.6556 67.0534 165.3796 67.6285 164.8045 67.6285 c
+163.9074 67.6285 163.2633 66.3403 163.2633 65.6042 c
+f
+159.1689 59.3705 m
+159.1689 59.2095 159.2839 59.1175 159.4449 59.1175 c
+159.5829 59.1175 159.9279 59.8306 160.388 60.3826 c
+160.9171 60.9807 161.4691 61.6478 161.7681 61.6478 c
+161.8372 61.6478 161.9522 61.5788 161.9522 61.4408 c
+161.9522 60.9807 161.2391 59.4625 160.71 57.9444 c
+160.434 57.2773 160.181 56.6562 159.9509 55.9891 c
+159.4909 54.632 159.1458 53.3438 159.1458 52.7228 c
+159.1458 52.3547 159.2379 51.7567 159.9739 51.7567 c
+161.6071 51.7567 164.2064 55.115 164.2064 56.0581 c
+164.2064 56.1962 164.1374 56.2882 164.0454 56.2882 c
+163.7464 56.2882 163.6084 55.7821 163.3093 55.2991 c
+162.8723 54.586 162.0442 53.5739 161.6071 53.5739 c
+161.4691 53.5739 161.4691 53.6429 161.4691 53.7349 c
+161.4691 54.2869 162.6192 57.1853 163.4243 59.4625 c
+163.8614 60.6357 164.2064 61.5328 164.2064 62.2228 c
+164.2064 62.8669 163.8384 63.281 163.3093 63.281 c
+161.6071 63.281 159.1689 59.9456 159.1689 59.3705 c
+f
+*u
+171.404 63.212 m
+168.6897 63.212 165.3083 59.4395 165.3083 55.6211 c
+165.3083 54.2409 165.8374 51.7106 167.9766 51.7106 c
+168.8967 51.7106 169.7938 52.2857 170.5989 53.0908 c
+171.6801 54.1259 172.4391 55.5751 172.4391 56.0121 c
+172.4391 56.0811 172.4161 56.2882 172.1861 56.2882 c
+171.9101 56.2882 171.8641 55.7591 171.174 54.816 c
+170.5529 53.9879 169.6328 53.1598 168.8047 53.1598 c
+168.2527 53.1598 167.4476 53.6199 167.4476 55.2991 c
+167.4476 55.8971 167.5396 56.4262 167.6086 56.5872 c
+167.6776 56.7252 169.4258 56.7942 170.99 57.4383 c
+172.3701 58.0134 173.5893 59.0715 173.5893 60.7737 c
+173.5893 62.2458 172.6232 63.212 171.404 63.212 c
+f
+171.7491 61.5098 m
+171.7491 60.4056 171.243 59.0945 170.4839 58.4274 c
+169.4948 57.5533 168.1837 57.2773 167.8156 57.2773 c
+167.7696 57.2773 167.7466 57.3003 167.7466 57.3233 c
+167.7466 58.1974 169.4258 62.6139 170.967 62.6139 c
+171.289 62.6139 171.7491 62.4529 171.7491 61.5098 c
+f
+*U
+179.82 55.207 m
+179.82 57.6453 177.0367 59.4165 177.0367 61.1417 c
+177.0367 61.7858 177.4508 62.6139 178.2789 62.6139 c
+178.5779 62.6139 178.9689 62.3839 179.1759 62.1308 c
+179.544 61.7168 179.82 61.1187 179.981 60.6357 c
+180.1191 60.2676 180.1651 60.0146 180.3951 60.0146 c
+180.9012 60.0146 180.9702 60.5437 181.1312 61.0727 c
+181.2692 61.5788 181.3842 61.9468 181.3842 62.2688 c
+181.3842 62.8439 179.843 63.35 178.8769 63.35 c
+177.1287 63.35 175.2425 61.8088 175.2425 59.7846 c
+175.2425 57.5303 177.8418 56.0811 177.8418 54.2409 c
+177.8418 53.3438 177.3817 52.4237 176.5536 52.4237 c
+175.5875 52.4237 175.1275 53.3438 174.8055 54.2179 c
+174.5754 54.931 174.4834 55.6671 174.0464 55.6671 c
+173.3333 55.6671 173.2413 53.3668 173.2413 53.0678 c
+173.2413 52.4467 174.5524 51.7336 175.9786 51.7336 c
+178.2558 51.7336 179.82 53.5509 179.82 55.207 c
+f
+180.6669 52.8148 m
+180.6669 52.0557 181.357 52.1477 181.357 51.6416 c
+181.357 50.8365 179.7238 50.0545 179.7238 49.8014 c
+179.7238 49.6864 179.8158 49.5714 179.9538 49.5714 c
+180.5519 49.5714 183.0592 51.2276 183.0592 53.0678 c
+183.0592 53.8499 182.4151 54.1719 182.0241 54.1719 c
+181.196 54.1719 180.6669 53.3898 180.6669 52.8148 c
+f
+191.5624 66.8004 m
+191.5854 66.4783 192.0225 66.5013 192.3905 66.3863 c
+192.7126 66.3173 192.9656 66.1563 192.9656 65.8573 c
+192.9656 65.6042 191.6314 61.1647 190.5273 57.3923 c
+190.0673 55.7591 189.6992 54.1949 189.2622 53.1828 C
+188.8941 52.4927 187.422 52.9068 187.422 52.2397 c
+187.422 51.9637 187.606 51.8717 187.767 51.8717 c
+188.02 51.8947 188.5951 52.0327 190.4353 52.0327 c
+191.3094 52.0557 192.1605 51.9407 192.6666 51.9407 c
+193.0116 51.9407 193.1496 52.1477 193.1496 52.3547 c
+193.1496 52.9758 191.8615 52.2857 191.8385 53.3438 c
+191.8385 53.9189 192.7126 56.3112 193.4947 59.0945 c
+194.4608 62.2919 195.2659 65.5352 195.4959 65.9033 c
+195.6569 66.1793 195.8869 66.3863 196.623 66.5013 c
+196.807 66.5243 197.4051 66.5473 197.4051 66.8924 c
+197.4051 67.0534 197.3131 67.2144 196.9911 67.2144 c
+196.807 67.2144 195.6799 67.1224 194.6908 67.1224 c
+194.1387 67.1224 192.2525 67.1914 192.1145 67.1914 c
+191.6544 67.1914 191.5624 66.9154 191.5624 66.8004 c
+f
+204.463 63.304 m
+202.2318 63.304 199.8625 59.7616 199.0574 58.5654 c
+199.0114 58.4504 198.9884 58.4964 199.0114 58.5884 c
+199.4024 60.0146 199.8625 61.2797 199.8625 62.2228 c
+199.8625 62.7979 199.5864 63.373 198.8504 63.373 c
+197.2862 63.373 195.0089 60.2906 195.0089 59.5315 c
+195.0089 59.3705 195.0549 59.2555 195.1699 59.2555 c
+195.446 59.2555 195.676 59.7846 196.09 60.3366 c
+196.6191 60.9807 197.2632 61.8088 197.6542 61.8088 c
+197.7232 61.8088 197.7922 61.7628 197.7922 61.5328 c
+197.7922 60.5667 195.814 55.115 194.9859 52.4007 c
+194.8939 52.1017 195.0779 52.0327 195.952 52.0327 c
+196.5731 52.0327 196.8721 51.9407 196.9872 52.4237 c
+197.4932 54.2409 198.4363 56.2652 199.4714 58.0364 c
+200.4145 59.6926 202.4388 62.0848 203.5659 62.0848 c
+203.8189 62.0848 203.9799 61.9008 203.9799 61.5098 c
+203.9799 60.3596 201.0356 54.862 201.1276 52.7688 c
+201.1506 52.1707 201.3577 51.7336 202.1167 51.7336 c
+203.8649 51.7336 205.4061 54.1719 206.1192 55.4601 c
+206.2342 55.6671 206.4182 55.8971 206.2572 56.1501 c
+206.2112 56.2422 206.1192 56.2882 206.0042 56.2882 c
+205.9352 56.2882 205.8662 56.2192 205.8202 56.1501 c
+205.3371 55.2991 204.279 53.4358 203.5659 53.3898 c
+203.4279 53.3898 203.3589 53.5278 203.3589 53.6429 c
+203.3589 54.471 205.9352 59.8306 205.9352 61.6478 c
+205.9352 62.8669 205.2681 63.304 204.463 63.304 c
+f
+214.0293 63.373 m
+210.1188 63.373 207.3585 58.4734 207.3585 55.4601 c
+207.3585 53.5049 208.3936 51.7567 210.2338 51.7567 c
+212.8101 51.7567 214.7423 55.4601 214.7423 56.1501 c
+214.7423 56.3112 214.6733 56.3802 214.5813 56.3802 c
+214.1903 56.3802 213.9603 55.4601 213.3392 54.701 c
+212.7641 53.9649 212.097 53.2748 211.0619 53.2748 c
+210.2108 53.2748 209.6358 54.0339 209.6358 55.4601 c
+209.6358 58.0134 211.476 62.6139 213.1322 62.6139 c
+213.7532 62.6139 213.7762 62.0618 213.8452 61.4408 c
+213.9142 60.7507 214.1213 60.1296 214.8344 60.1296 c
+215.6164 60.1296 215.9385 60.9807 215.9385 61.6708 c
+215.9385 62.9589 214.8574 63.373 214.0293 63.373 c
+f
+215.0577 53.8269 m
+214.8046 53.4818 214.6206 53.0448 214.6666 52.5847 c
+214.7126 52.2167 214.9427 51.8027 215.3337 51.6876 c
+215.7708 51.5036 216.2538 51.7106 216.5759 52.0787 c
+216.9669 52.5387 217.1049 53.2518 216.8519 53.8039 c
+216.7369 54.0339 216.5528 54.2409 216.2998 54.3099 c
+215.8398 54.448 215.4027 54.2179 215.0577 53.8269 c
+f
+u
+0 R
+1 G
+0.1 w
+44.6631 79.7481 m
+43.7335 78.8185 42.2266 78.8188 41.297 79.7484 c
+40.3674 80.6781 40.3672 82.1865 41.2968 83.1161 c
+46.81 88.6287 L
+48.2846 87.1541 L
+42.7327 81.6023 L
+43.1494 81.1856 L
+43.1494 81.1856 L
+48.7012 86.7375 L
+50.1771 85.262 L
+44.6631 79.7481 L
+44.6631 79.7481 L
+b
+48.9565 83.1757 m
+49.8861 84.1053 51.393 84.105 52.3227 83.1754 c
+53.2523 82.2458 53.2525 80.7374 52.3228 79.8077 c
+46.8096 74.2951 L
+45.3351 75.7697 L
+50.8869 81.3215 L
+50.4702 81.7382 L
+50.4702 81.7382 L
+44.9184 76.1863 L
+43.4425 77.6618 L
+48.9565 83.1757 L
+48.9565 83.1757 L
+b
+56.1047 71.7365 m
+57.0343 70.8068 57.034 69.2999 56.1044 68.3703 c
+55.1748 67.4407 53.6663 67.4405 52.7367 68.3701 c
+47.2241 73.8833 L
+48.6987 75.3579 L
+54.2505 69.806 L
+54.6672 70.2227 L
+54.6672 70.2227 L
+49.1153 75.7745 L
+50.5908 77.2504 L
+56.1047 71.7365 L
+56.1047 71.7365 L
+b
+52.6771 76.0298 m
+51.7475 76.9594 51.7478 78.4663 52.6774 79.396 c
+53.607 80.3256 55.1154 80.3257 56.0451 79.3961 c
+61.5577 73.8829 L
+60.0831 72.4084 L
+54.5313 77.9602 L
+54.1146 77.5435 L
+54.1146 77.5435 L
+59.6665 71.9917 L
+58.191 70.5158 L
+52.6771 76.0298 L
+52.6771 76.0298 L
+b
+59.8276 79.7504 m
+58.8979 78.8208 57.391 78.8211 56.4614 79.7507 c
+55.5318 80.6803 55.5316 82.1887 56.4612 83.1184 c
+61.9745 88.631 L
+63.449 87.1564 L
+57.8972 81.6046 L
+58.3139 81.1879 L
+58.3139 81.1879 L
+63.8656 86.7398 L
+65.3415 85.2643 L
+59.8276 79.7504 L
+59.8276 79.7504 L
+b
+64.1209 83.1779 m
+65.0505 84.1076 66.5574 84.1073 67.4871 83.1777 c
+68.4167 82.248 68.4169 80.7396 67.4872 79.81 c
+61.974 74.2974 L
+60.4995 75.772 L
+66.0513 81.3238 L
+65.6346 81.7405 L
+65.6346 81.7405 L
+60.0828 76.1886 L
+58.6069 77.6641 L
+64.1209 83.1779 L
+64.1209 83.1779 L
+b
+56.1047 86.8986 m
+57.0343 85.969 57.034 84.4621 56.1044 83.5324 c
+55.1747 82.6028 53.6663 82.6026 52.7367 83.5323 c
+47.2241 89.0455 L
+48.6987 90.52 L
+54.2505 84.9682 L
+54.6672 85.3849 L
+54.6672 85.3849 L
+49.1153 90.9367 L
+50.5908 92.4126 L
+56.1047 86.8986 L
+56.1047 86.8986 L
+b
+52.6771 91.1919 m
+51.7475 92.1216 51.7478 93.6285 52.6774 94.5581 c
+53.607 95.4877 55.1154 95.4879 56.0451 94.5583 c
+61.5577 89.045 L
+60.0831 87.5705 L
+54.5313 93.1223 L
+54.1146 92.7056 L
+54.1146 92.7056 L
+59.6665 87.1538 L
+58.191 85.6779 L
+52.6771 91.1919 L
+52.6771 91.1919 L
+b
+U
+0 To
+1 0 0 1 72.9034 40.0052 0 Tp
+TP
+0 Tr
+1 w
+/_Helvetica 7.25 Tf
+0 Ts
+80 Tz
+-40 Tt
+0 TA
+0 0 5 TC
+100 100 200 TW
+0 0 0 Ti
+0 Ta
+0 Tq
+0 0 Tl
+-0.2899 Tc
+0 Tw
+(A Sun Microsystems, Inc. Business\r) Tx 
+TO
+%%PageTrailer
+gsave annotatepage grestore showpage
+%%Trailer
+Adobe_IllustratorA_AI3 /terminate get exec
+Adobe_typography_AI3 /terminate get exec
+Adobe_customcolor /terminate get exec
+Adobe_cshow /terminate get exec
+Adobe_cmykcolor /terminate get exec
+Adobe_packedarray /terminate get exec
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+86.5 117 191 151.25 R
+7 X
+V
+3 9 Q
+0 X
+(M/S 29-01) 86.5 145.25 T
+(2550 Garcia A) 86.5 136.25 T
+(venue) 138.82 136.25 T
+(Mountain V) 86.5 127.25 T
+(iew) 129.71 127.25 T
+(, CA 94043) 142.12 127.25 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(2) 551.55 63.95 T
+2 18 Q
+-0.12 (Subcontract: A Flexible Base for) 191.5 708 S
+72 666 558 682 C
+0 0 612 792 C
+2 18 Q
+0 X
+0 K
+-0.12 (Distributed Pr) 216.35 688 S
+-0.12 (ogramming) 325.78 688 S
+72 632 558 648 C
+0 0 612 792 C
+4 10 Q
+0 X
+0 K
+(Graham Hamilton, Michael L. Powell, James G. Mitchell) 199.87 651.33 T
+3 9 Q
+(Sun Microsystems Laboratories, Inc.) 248.63 618 T
+(2550 Garcia A) 273.6 609 T
+(venue) 325.91 609 T
+(Mountain V) 266.32 600 T
+(iew) 309.52 600 T
+(, CA 94043) 321.93 600 T
+73 511 307 514 C
+73 513.16 307 513.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(1) 73 518 T
+(Introduction) 100 518 T
+3 10 Q
+0.25 0.11 (It has become common to provide remote procedure call) 73 494.33 B
+0.02 (facilities that extend the semantics of local procedure calls) 73 482.33 P
+0.25 0 (to distributed systems [Birrell & Nelson 1984]. This often) 73 470.33 B
+0.25 0.19 (takes the form of remote object invocation [Almes et al) 73 458.33 B
+(1985], [Black et al 1987].) 73 446.33 T
+0.25 0.15 (However) 73 422.33 B
+0.25 0.15 (, rather than there being a single set of obvious) 110.31 422.33 B
+-0.23 (semantics for all remote objects, there appears to be a wide) 73 410.33 P
+0.25 0.02 (range of possible object semantics, often ref) 73 398.33 B
+0.25 0.02 (lecting dif) 251.36 398.33 B
+0.25 0.02 (fer-) 292.52 398.33 B
+0.25 0.04 (ent application requirements. For example, there are RPC) 73 386.33 B
+0.25 0.31 (systems that include integrated support for replication) 73 374.33 B
+0.25 0.34 ([Birman & Joseph 1987], atomic transactions [Liskov) 73 362.33 B
+0.25 0.09 (1988], object migration [Schuller et al 1992], and persis-) 73 350.33 B
+0.25 0.14 (tence [OMG 1991]. But there are also RPC systems that) 73 338.33 B
+0.25 0.05 (provide only minimal features and instead concentrate on) 73 326.33 B
+0.25 0.02 (high performance [Schroeder & Burrows 1990], [Bershad) 73 314.33 B
+(et al 1990].) 73 302.33 T
+0.04 (One possible reaction to this diversity would be to attempt) 73 278.33 P
+0.25 0.44 (to invent a single mechanism for remote objects that) 73 266.33 B
+0.25 0.28 (includes all possible features. Unfortunately the list of) 73 254.33 B
+0.25 0.21 (possible properties is continually expanding and not all) 73 242.33 B
+0.25 0.13 (features are necessarily compatible. For example, a high) 73 230.33 B
+0.25 0.17 (performance system may not want its objects to include) 73 218.33 B
+0.25 0.12 (support for persistence or atomicity) 73 206.33 B
+0.25 0.12 (. Moreover) 220.03 206.33 B
+0.25 0.12 (, there are) 265.55 206.33 B
+0.25 0.05 (often a variety of dif) 73 194.33 B
+0.25 0.05 (ferent ways of implementing a given) 157.12 194.33 B
+0.25 0.24 (set of semantics. Having a single RPC system prevents) 73 182.33 B
+0.25 0.25 (applications exploiting new and improved mechanisms) 73 170.33 B
+(that may better re\337ect their real needs.) 73 158.33 T
+0.25 0.14 (For example, say that we wish to support object replica-) 73 134.33 B
+0.25 0.27 (tion so as to increase reliability) 73 122.33 B
+0.25 0.27 (. W) 207.37 122.33 B
+0.25 0.27 (e do not want client) 222.06 122.33 B
+0.04 (application code to need to do extra work simply to talk to) 73 110.33 P
+0.25 0.07 (replicated objects, so we would prefer to support replica-) 73 98.33 B
+-0.04 (tion underneath the covers, as part of the object invocation) 325 520.33 P
+0.25 0.11 (mechanism. But there are many dif) 325 508.33 B
+0.25 0.11 (ferent ways of imple-) 470.31 508.33 B
+0.25 0.18 (menting replication and it seems undesirable to build in) 325 496.33 B
+0.25 0.45 (support for some particular set of mechanisms while) 325 484.33 B
+0.1 (implicitly rejecting others. If an application developer dis-) 325 472.33 P
+-0.23 (covers a more ef) 325 460.33 P
+-0.23 (\336cient way of managing replicated objects) 390.48 460.33 P
+-0.21 (within their application then we would like them to be able) 325 448.33 P
+0.25 0.46 (to start using this new mechanism without having to) 325 436.33 B
+(change the base RPC system.) 325 424.33 T
+0.25 0.14 (In the Spring system we have taken an approach of wel-) 325 400.33 B
+0.25 0.03 (coming diversity) 325 388.33 B
+0.25 0.03 (, rather than trying to implement a single) 392.61 388.33 B
+-0.18 (catch-all RPC mechanism. W) 325 376.33 P
+-0.18 (e provide a framework which) 441.98 376.33 P
+0.25 0.42 (makes it easy for dif) 325 364.33 B
+0.25 0.42 (ferent RPC mechanisms to work) 416.27 364.33 B
+0.25 0.04 (together and for implementors to add new mechanisms in) 325 352.33 B
+0.25 0.51 (a consistent, compatible, way) 325 340.33 B
+0.25 0.51 (. Replaceable modules) 457.99 340.33 B
+0.25 0.44 (known as subcontracts are given control of the basic) 325 328.33 B
+(mechanisms of object invocation and ar) 325 316.33 T
+(gument passing.) 483.96 316.33 T
+0.25 0.36 (Subcontracts are separated from object interfaces and) 325 292.33 B
+0.18 (object implementations. It is easy for object implementors) 325 280.33 P
+-0.15 (to either select and use an existing subcontract or to imple-) 325 268.33 P
+0.25 0.33 (ment a new subcontract. Correspondingly) 325 256.33 B
+0.25 0.33 (, application) 505.3 256.33 B
+0.25 0.06 (level programmers need not be aware of the specif) 325 244.33 B
+0.25 0.06 (ic sub-) 531.51 244.33 B
+(contracts that are being used for particular objects.) 325 232.33 T
+0.25 0.19 (The rest of the paper is structured as follows: Section 2) 325 208.33 B
+0.25 0.05 (describes related work in the distributed systems and lan-) 325 196.33 B
+0.25 0.2 (guage communities. Section 3 gives an overview of the) 325 184.33 B
+-0.14 (Spring system, which is the context for this work. Sections) 325 172.33 P
+0.25 0.06 (4, 5 and 6 describe subcontract and how it is convention-) 325 160.33 B
+0.01 (ally used. Section 7 gives an example of the operation of a) 325 148.33 P
+-0.22 (subcontract-based object. Section 8 describes some uses of) 325 136.33 P
+0.25 0.13 (subcontract. Finally Section 9 ref) 325 124.33 B
+0.25 0.13 (lects on our experience) 462.76 124.33 B
+(with subcontract.) 325 112.33 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(Subcontract: A Flexible Base for Distributed Programming) 232 64.95 T
+-2.22 (3) 552.55 64.95 P
+72 750.68 558 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Related work) 288.74 739.85 T
+71 733.98 557 733.98 2 L
+0.25 H
+N
+72 705 306 708 C
+72 707.16 306 707.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(2) 72 712 T
+(Related work) 99 712 T
+0 10 Q
+(2.1) 72 676.33 T
+(Language-level support for remote) 99 676.33 T
+(operations) 99 665.33 T
+3 F
+0.25 0.39 (T) 72 649.33 B
+0.25 0.39 (echniques for providing a language-level veneer for) 77.8 649.33 B
+0.11 (remote operations have been in use for some time [Nelson) 72 637.33 P
+0.25 0.03 (1981], [Birrell & Nelson 1984]. T) 72 625.33 B
+0.25 0.03 (ypically) 209.22 625.33 B
+0.25 0.03 (, a remote inter-) 240.99 625.33 B
+0.25 0.03 (face is def) 72 613.33 B
+0.25 0.03 (ined in some language. Then a pair of) 113.4 613.33 B
+4 F
+0.25 0.03 (stubs) 270.22 613.33 B
+3 F
+0.25 0.03 ( are) 290.94 613.33 B
+0.25 0.09 (generated from this interface. The) 72 601.33 B
+4 F
+0.25 0.09 (client stub) 214.69 601.33 B
+3 F
+0.25 0.09 (runs in one) 260.16 601.33 B
+0.25 0.26 (machine and presents a language level interface that is) 72 589.33 B
+0.25 0 (derived from the remote interface. The) 72 577.33 B
+4 F
+0.25 0 (server stub) 231.04 577.33 B
+3 F
+0.25 0 ( runs in) 275.48 577.33 B
+0.25 0.17 (some other machine and invokes a language-level inter-) 72 565.33 B
+0.25 0.03 (face that is derived from the remote interface. T) 72 553.33 B
+0.25 0.03 (o perform) 265.84 553.33 B
+0.25 0.49 (a remote operation, a client application programmer) 72 541.33 B
+-0.14 (invokes the client stub, which) 72 529.33 P
+4 F
+-0.14 (marshals) 192.98 529.33 P
+3 F
+-0.14 ( the ar) 229.65 529.33 P
+-0.14 (guments into) 254.19 529.33 P
+0.25 0.31 (network buf) 72 517.33 B
+0.25 0.31 (fers and transmits them to the server stub,) 124.07 517.33 B
+-0.13 (which) 72 505.33 P
+4 F
+-0.13 (unmarshals) 98.81 505.33 P
+3 F
+-0.13 ( the ar) 145.48 505.33 P
+-0.13 (guments from the network buf) 170.04 505.33 P
+-0.13 (fers) 291.01 505.33 P
+0.25 0.12 (and calls into the server application. Similarly) 72 493.33 B
+0.25 0.12 (, when the) 262.99 493.33 B
+-0.22 (server application returns, the results are marshalled by the) 72 481.33 P
+0.25 0.1 (server stub and returned to the client stub, which unmar-) 72 469.33 B
+(shals the results and returns them to the client application.) 72 457.33 T
+0.25 0.11 (When the ar) 72 433.33 B
+0.25 0.11 (guments or results are simple values such as) 122.44 433.33 B
+-0.02 (integers or strings, the business of marshalling and unmar-) 72 421.33 P
+0.25 0.01 (shalling is reasonably straightforward. The stubs will nor-) 72 409.33 B
+0.25 0.01 (mally simply put the literal value of the ar) 72 397.33 B
+0.25 0.01 (gument into the) 242.58 397.33 B
+0.25 0.03 (network buf) 72 385.33 B
+0.25 0.03 (fer) 120.96 385.33 B
+0.25 0.03 (. However) 131.59 385.33 B
+0.25 0.03 (, in languages that support either) 173.33 385.33 B
+0.25 0.02 (abstract data types or objects, marshalling becomes rather) 72 373.33 B
+(more interesting.) 72 361.33 T
+0.25 0.13 (One solution is for the stubs to marshal the internal data) 72 337.33 B
+0.25 0.24 (structures of the object and then to unmarshal this data) 72 325.33 B
+-0.12 (back into a new object. This has several fairly serious de\336-) 72 313.33 P
+0.25 0.24 (ciencies. First, it is a violation of abstraction, since the) 72 301.33 B
+0.25 0.32 (stubs have no business knowing about the internals of) 72 289.33 B
+0.25 0.43 (objects. Second, it requires that the server and client) 72 277.33 B
+0.09 (implementations of the object use the same internal layout) 72 265.33 P
+0.16 (for their data structures. Third, it may involve marshalling) 72 253.33 P
+0.25 0.34 (lar) 72 241.33 B
+0.25 0.34 (ge amounts of unnecessary data since not all of the) 83.38 241.33 B
+0.25 0.01 (internal state of the object may really need to be transmit-) 72 229.33 B
+(ted to the other machine.) 72 217.33 T
+0.25 0.38 (An alternative solution is that when an object is mar-) 72 193.33 B
+0.23 (shalled, none of its internal state is transmitted. Instead an) 72 181.33 P
+0.05 (identifying token is generated for the object and this token) 72 169.33 P
+-0.02 (is transmitted. For example in the Eden system [Lazowska) 72 157.33 P
+-0.15 (et al 1981], [Almes et al 1985], objects are assigned names) 72 145.33 P
+0.25 0.28 (and when an object is marshalled, then its name rather) 72 133.33 B
+0.25 0.06 (than its actual representation is marshalled. Subsequently) 72 121.33 B
+-0.05 (when remote machines wish to operate on this object, they) 72 109.33 P
+0.25 0.06 (must use the name to locate the original site of the object) 72 97.33 B
+-0.02 (and transmit their invocations to that site. This mechanism) 324 713.33 P
+0.25 0.26 (is appropriate for heavyweight objects, such as f) 324 701.33 B
+0.25 0.26 (iles or) 531.44 701.33 B
+0.25 0.32 (databases, but it is often inappropriate for lightweight) 324 689.33 B
+0.25 0.26 (abstractions, such as an object representing a cartesian) 324 677.33 B
+0.25 0.13 (coordinate pair) 324 665.33 B
+0.25 0.13 (, where it would have been better to mar-) 386.11 665.33 B
+(shal the real state of the object.) 324 653.33 T
+0.25 0.11 (Finally) 324 629.33 B
+0.25 0.11 (, some object-oriented programming systems pro-) 352.45 629.33 B
+0.25 0.24 (vide the means for an object implementation to control) 324 617.33 B
+0.25 0.11 (how its ar) 324 605.33 B
+0.25 0.11 (guments are marshalled and unmarshalled. For) 364.85 605.33 B
+0.25 0.21 (example, in the Ar) 324 593.33 B
+0.25 0.21 (gus system [Herlihy & Liskov 1982]) 402.82 593.33 B
+0.25 0.67 (object implementors can provide functions to map) 324 581.33 B
+0.25 0.11 (between their internal representation and a specif) 324 569.33 B
+0.25 0.11 (ic, con-) 527.09 569.33 B
+0.01 (crete, external representation. The Ar) 324 557.33 P
+0.01 (gus stubs will invoke) 473.24 557.33 P
+0.25 0.08 (the appropriate mapping functions when marshalling and) 324 545.33 B
+0.25 0.03 (unmarshalling objects so that it is the external representa-) 324 533.33 B
+0.25 0.06 (tion rather than any particular internal representation that) 324 521.33 B
+(is transmitted.) 324 509.33 T
+0.25 0.15 (These dif) 324 485.33 B
+0.25 0.15 (ferent solutions all either impose a single stan-) 362.9 485.33 B
+-0.17 (dard marshalling policy for all objects, or require that indi-) 324 473.33 P
+0.25 0.34 (vidual object implementors take responsibility for the) 324 461.33 B
+(details of transforming an object into a marshalled form.) 324 449.33 T
+0 F
+(2.2) 324 417.33 T
+(Re\337ection in object-oriented languages) 351 417.33 T
+3 F
+0.25 0.27 (Some object-oriented languages provide the ability for) 324 401.33 B
+0.25 0.01 (object implementors to gain control of some of the funda-) 324 389.33 B
+0.25 0.24 (mental object mechanisms. This technique is known as) 324 377.33 B
+4 F
+0.25 0.36 (r) 324 365.33 B
+0.25 0.36 (ef) 327.88 365.33 B
+0.25 0.36 (lection) 335.27 365.33 B
+3 F
+0.25 0.36 (. For example in the 3-KRS language [Maes) 365.04 365.33 B
+-0.06 (1987] objects can have meta-objects associated with them.) 324 353.33 P
+0.14 (A meta-object provides methods specifying how an object) 324 341.33 P
+0.02 (inherits information, how an object is printed, how objects) 324 329.33 P
+0.25 0.1 (are created, how message passing \050that is, object invoca-) 324 317.33 B
+0.25 0.15 (tion\051 is implemented, etc. 3-KRS does not however pro-) 324 305.33 B
+(vide any control over ar) 324 293.33 T
+(gument passing.) 419.35 293.33 T
+0.25 0.06 (By providing ref) 324 269.33 B
+0.25 0.06 (lective object invocation in Smalltalk-80) 391.64 269.33 B
+0.25 0.08 (it was possible to implement objects which are automati-) 324 257.33 B
+0.25 0.29 (cally locked during invocation and objects which only) 324 245.33 B
+-0.21 (compute a value when they are \336rst read [Foote & Johnson) 324 233.33 P
+(1989].) 324 221.33 T
+0.25 0.04 (W) 324 197.33 B
+0.25 0.04 (e were interested in applying these notions of ref) 332.68 197.33 B
+0.25 0.04 (lective) 531.1 197.33 B
+0.25 0.06 (control of fundamental object mechanisms to the particu-) 324 185.33 B
+(lar problems of distributed computing.) 324 173.33 T
+0 F
+(2.3) 324 141.33 T
+(Object adaptors in CORBA) 351 141.33 T
+3 F
+0.25 0.7 (The Common Object Request Broker Architecture) 324 125.33 B
+0.25 0.13 (\050CORBA\051 [OMG 1991] def) 324 113.33 B
+0.25 0.13 (ines a notion of) 438.48 113.33 B
+4 F
+0.25 0.13 (object adap-) 506.16 113.33 B
+0.25 0.04 (tors) 324 101.33 B
+3 F
+0.25 0.04 (, which is based, in part, on some of our early experi-) 339.73 101.33 B
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+54 75.33 540 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(4) 54 65.62 T
+(Subcontract: A Flexible Base for Distributed Programming) 234 65.62 T
+54 750.68 540 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Overview of Spring) 258.99 739.85 T
+53 733.98 539 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.11 (ence with subcontract. Object adaptors provide a limited) 54 713.33 B
+0.25 0.2 (set of choices about the server) 54 701.33 B
+0.25 0.2 (-side object mechanisms.) 182.07 701.33 B
+0.25 0.21 (However) 54 689.33 B
+0.25 0.21 (, all object adaptors are supplied as part of the) 91.73 689.33 B
+0.25 0.11 (basic object machinery and it is not possible for applica-) 54 677.33 B
+0.25 0.1 (tion writers to implement new object adaptors, or for the) 54 665.33 B
+0.25 0.03 (object machinery to discover and install new object adap-) 54 653.33 B
+(tors at run-time.) 54 641.33 T
+54 598 288 601 C
+54 600.16 288 600.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(3) 54 605 T
+(Overview of Spring) 81 605 T
+3 10 Q
+-0.06 (Spring is an experimental distributed environment. Its cur-) 54 581.33 P
+0.25 0.2 (rent incarnation includes a distributed operating system) 54 569.33 B
+(and a support framework for distributed applications.) 54 557.33 T
+0.25 0.03 (Spring is focused on providing interfaces rather than sim-) 54 533.33 B
+0.25 0.13 (ply on providing implementations. W) 54 521.33 B
+0.25 0.13 (e aim to encourage) 209.16 521.33 B
+0.09 (the coexistence of radically dif) 54 509.33 P
+0.09 (ferent implementations of a) 177.47 509.33 P
+-0.05 (given interface within a single system. W) 54 497.33 P
+-0.05 (e have reinforced) 218.7 497.33 P
+0.25 0.18 (this view of a strong separation of implementations and) 54 485.33 B
+0.25 0.31 (interfaces by using the object-oriented notions of data) 54 473.33 B
+(encapsulation and interface inheritance.) 54 461.33 T
+0 F
+(3.1) 54 429.33 T
+(The interface de\336nition language) 81 429.33 T
+3 F
+0.25 0.11 (The unifying principle of Spring is that all the key inter-) 54 413.33 B
+0.16 (faces are de\336ned in an interface de\336nition language called) 54 401.33 P
+0.25 0.2 (IDL [OMG 1991]. This language is object-oriented and) 54 389.33 B
+0.25 0.01 (includes support for multiple inheritance. It is purely con-) 54 377.33 B
+0.25 0.04 (cerned with interface properties and does not provide any) 54 365.33 B
+(implementation information.) 54 353.33 T
+0.25 0.33 (From the IDL interfaces it is possible to generate lan-) 54 329.33 B
+0.25 0.02 (guage-specif) 54 317.33 B
+0.25 0.02 (ic stubs. These stubs provide a language-spe-) 104.79 317.33 B
+-0.02 (ci\336c mapping to the Spring interfaces. For example, in our) 54 305.33 P
+0.25 0.16 (main implementation language, C++, Spring objects are) 54 293.33 B
+0.25 0.3 (represented by C++ objects. When a method on a stub) 54 281.33 B
+0.25 0.05 (object is invoked it will either perform a local call within) 54 269.33 B
+0.25 0.22 (the current address space or forward the call to another) 54 257.33 B
+(address space, which may be on a dif) 54 245.33 T
+(ferent machine.) 202.67 245.33 T
+0 F
+(3.2) 54 213.33 T
+(The Spring object model) 81 213.33 T
+3 F
+-0.24 (Spring has a slightly dif) 54 197.33 P
+-0.24 (ferent way of viewing objects from) 148.41 197.33 P
+0.25 0.12 (other distributed object-oriented systems and it is neces-) 54 185.33 B
+0.11 (sary to clarify this before discussing the details of subcon-) 54 173.33 P
+(tract.) 54 161.33 T
+0.25 0.35 (Most distributed systems present a model that objects) 54 137.33 B
+0.25 0.33 (reside at server machines and client machines possess) 54 125.33 B
+-0.01 (object references that point to the object at the server) 54 113.33 P
+-0.01 (. \050See) 265.24 113.33 P
+0.25 0.08 (Figure 1.\051 So clients pass around object references rather) 306 713.33 B
+(than passing around actual objects.) 306 701.33 T
+0.25 0.03 (Spring presents a model that clients are operating directly) 306 532.48 B
+0.25 0.36 (on objects, rather than on object references. However) 306 520.48 B
+0.25 0.09 (some of these objects happen to keep all their interesting) 306 508.48 B
+0.25 0.14 (state at some remote site, so that their local state merely) 306 496.48 B
+(consists of a handle to this remote state. \050See Figure 2.\051) 306 484.48 T
+0.25 0.16 (An object can only exist in one place at a time, so if we) 306 324.7 B
+0.25 0.07 (transmit an object to someone else then we cease to have) 306 312.7 B
+-0.21 (the object ourselves. However) 306 300.7 P
+-0.21 (, we can also copy the object) 426.04 300.7 P
+0.25 0.09 (before transmitting it, which might be implemented such) 306 288.7 B
+-0.21 (that there are now two distinct objects pointing to the same) 306 276.7 P
+(underlying state.) 306 264.7 T
+0.25 0.21 (For most server) 306 240.7 B
+0.25 0.21 (-based objects this distinction is mainly) 372.24 240.7 B
+-0.11 (one of terminology) 306 228.7 P
+-0.11 (. However) 381.79 228.7 P
+-0.11 (, Spring also supports objects) 422.93 228.7 P
+0.25 0.02 (which are not server) 306 216.7 B
+0.25 0.02 (-based, and objects where the state of) 388.23 216.7 B
+0.25 0.3 (the object is split between the client and the server) 306 204.7 B
+0.25 0.3 (. In) 525.52 204.7 B
+0.07 (these cases it is much more convenient to regard the client) 306 192.7 P
+0.25 0.08 (as possessing the true object, rather than merely possess-) 306 180.7 B
+(ing a reference.) 306 168.7 T
+0 F
+(3.3) 306 136.7 T
+(Doors) 333 136.7 T
+3 F
+0.1 (Spring applications run as separate) 306 120.7 P
+4 F
+0.1 (domains) 448.42 120.7 P
+3 F
+0.1 (. Each domain) 482.31 120.7 P
+(is an address space plus a collection of threads.) 306 108.7 T
+306 90 540 720 C
+306 553.14 540 698 C
+0.5 H
+2 Z
+0 X
+0 K
+90 450 17.25 6.75 498.43 614.44 A
+3 10 Q
+(object) 485.34 611.91 T
+373.06 604.19 416.06 625.19 R
+7 X
+V
+0 X
+(object) 382.34 618.52 T
+(reference) 375.96 608.52 T
+373.06 603.19 417.06 627.69 R
+N
+481.2 629.17 485.89 622.69 478.48 625.7 480.47 626.94 4 Y
+V
+433.25 663.67 480.47 626.94 2 L
+0.4 H
+N
+470.65 616.9 478.34 614.69 470.65 612.48 471.45 614.69 4 Y
+V
+417.56 614.69 471.45 614.69 2 L
+N
+316.77 558.05 517.49 586.81 R
+7 X
+V
+0 9 Q
+0 X
+(FIGURE  1.) 316.77 580.81 T
+1 F
+(Systems distinguishing object) 370.77 580.81 T
+316.77 560.81 517.49 566.81 C
+316.77 564.81 550.77 564.81 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+306 553.14 540 698 C
+1 9 Q
+0 X
+0 K
+(references and objects) 370.77 569.81 T
+313.38 603.67 365.88 627.17 R
+7 X
+V
+3 10 Q
+0 X
+(client) 328.52 620.5 T
+( application) 316.15 610.5 T
+311.75 596.67 423.75 635.67 R
+0.4 H
+2 Z
+8 X
+N
+389.06 652.69 432.06 673.69 R
+7 X
+V
+0 X
+(object) 398.34 667.02 T
+(reference) 391.96 657.02 T
+389.06 651.69 433.06 676.19 R
+0.5 H
+N
+329.38 652.17 381.88 675.67 R
+7 X
+V
+0 X
+(client) 344.52 669 T
+( application) 332.15 659 T
+327.75 645.17 439.75 684.17 R
+0.4 H
+8 X
+N
+459.25 596.67 537.25 651.67 R
+N
+483.75 626.67 534.25 647.17 R
+7 X
+V
+0 X
+(server) 496.79 640.5 T
+( application) 485.53 630.5 T
+306 90 540 720 C
+0 0 612 792 C
+306 90 540 720 C
+306 345.37 540 481.14 C
+464.85 397.63 512.74 419.06 R
+7 X
+0 K
+V
+3 10 Q
+0 X
+(underlying) 467.13 412.4 T
+(state) 479.63 402.4 T
+464.85 396.61 513.85 421.61 R
+0.5 H
+2 Z
+N
+457.78 423.13 461.99 416.33 454.82 419.87 456.89 420.96 4 Y
+V
+424.5 450.33 456.9 420.96 2 L
+0.4 H
+N
+454.18 408.05 462 406.33 454.46 403.65 455.12 405.9 4 Y
+V
+415.85 403.45 455.13 405.9 2 L
+N
+340.42 355.99 494.71 373.33 R
+7 X
+V
+340.42 358.33 494.71 364.33 C
+340.42 362.33 574.42 362.33 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+306 345.37 540 481.14 C
+0 9 Q
+0 X
+0 K
+(FIGURE  2.) 340.42 367.33 T
+1 F
+(Objects in Spring) 394.42 367.33 T
+320.12 438.34 372.62 461.84 R
+7 X
+V
+3 10 Q
+0 X
+(client) 335.27 455.17 T
+( application) 322.9 445.17 T
+318.5 431.34 430.5 470.34 R
+0.4 H
+2 Z
+8 X
+N
+0.5 H
+0 X
+90 450 17.25 6.75 407.9 451.7 A
+(object) 394.8 449.16 T
+309.62 390.84 362.12 414.34 R
+7 X
+V
+0 X
+(client) 324.77 407.67 T
+( application) 312.4 397.67 T
+308 383.84 420 422.84 R
+0.4 H
+8 X
+N
+0.5 H
+0 X
+90 450 17.25 6.75 397.4 404.2 A
+(object) 384.3 401.66 T
+448.35 390.11 535.35 451.61 R
+0.4 H
+8 X
+N
+478.85 426.61 529.35 447.11 R
+7 X
+V
+0 X
+(server) 491.89 440.45 T
+( application) 480.63 430.45 T
+306 90 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(Subcontract: A Flexible Base for Distributed Programming) 232 64.95 T
+-2.22 (5) 552.55 64.95 P
+72 750.68 558 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Where subcontract \336ts in) 265.48 739.85 T
+71 733.98 557 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.14 (The Spring kernel provides an object-oriented inter) 72 713.33 B
+0.25 0.14 (-pro-) 285.58 713.33 B
+-0.16 (cess communication mechanism called) 72 701.33 P
+4 F
+-0.16 (doors) 229.66 701.33 P
+3 F
+-0.16 ( [Hamilton &) 252.44 701.33 P
+0.25 0.11 (Kougiouris 1993], which are analogous to ports in Mach) 72 689.33 B
+0.25 0.03 ([Acetta et al 1986], [Draves 1990]. A door is a communi-) 72 677.33 B
+0.25 0.47 (cation endpoint, to which threads may execute cross) 72 665.33 B
+0.25 0.01 (address space calls. A domain that creates a door receives) 72 653.33 B
+-0.2 (a) 72 641.33 P
+4 F
+-0.2 (door identi\336er) 78.74 641.33 P
+3 F
+-0.2 (, which it can pass to other domains so that) 135.63 641.33 P
+0.25 0.33 (they can issue calls to the associated door) 72 629.33 B
+0.25 0.33 (. The kernel) 253.81 629.33 B
+0.25 0.4 (manages all operations on doors and door identif) 72 617.33 B
+0.25 0.4 (iers,) 287.47 617.33 B
+0.25 0.35 (including their construction, destruction, copying and) 72 605.33 B
+0.25 0.11 (transmission. Door identif) 72 593.33 B
+0.25 0.11 (iers function as software capa-) 179.58 593.33 B
+0.17 (bilities since only the legitimate owner of a door identi\336er) 72 581.33 P
+(may issue a call on its associated door) 72 569.33 T
+(.) 223.93 569.33 T
+-0.2 (A set of network servers extend the door mechanism trans-) 72 545.33 P
+0.25 0.06 (parently over the network. This includes both forwarding) 72 533.33 B
+0.25 0.02 (door invocations over the network and also mapping door) 72 521.33 B
+(identi\336ers to and from an extended network form.) 72 509.33 T
+0 F
+(3.4) 72 477.33 T
+(Status) 99 477.33 T
+3 F
+0.12 (Spring currently exists as a fairly complete prototype. The) 72 461.33 P
+0.19 (operating system is based around a minimal kernel, which) 72 449.33 P
+0.25 0.11 (provides basic object-oriented inter) 72 437.33 B
+0.25 0.11 (-process communica-) 218.01 437.33 B
+0.22 (tion [Hamilton & Kougiouris 1993] and memory manage-) 72 425.33 P
+0.25 0.24 (ment [Khalidi & Nelson 1993A]. Functionality such as) 72 413.33 B
+0.25 0 (naming, paging, f) 72 401.33 B
+0.25 0 (ile systems, etc. are all provided as user) 142.51 401.33 B
+0.25 0 (-) 302.67 401.33 B
+0.02 (mode services outside of the basic kernel. The system also) 72 389.33 P
+0.25 0.31 (provides enough U) 72 377.33 B
+0.25 0.31 (nix) 153.92 377.33 B
+5 8 Q
+0.2 0.31 (\342) 167.64 381.33 B
+3 10 Q
+0.25 0.31 ( emulation to support standard) 174.27 377.33 B
+0.25 0.06 (utilities such as make, vi, csh, the X window system, etc.) 72 365.33 B
+0.25 0.42 ([Khalidi & Nelson 1993B]. All system interfaces are) 72 353.33 B
+0.25 0.2 (def) 72 341.33 B
+0.25 0.2 (ined in IDL and all the inter) 84.82 341.33 B
+0.25 0.2 (-process communication) 203.53 341.33 B
+(uses our subcontract machinery) 72 329.33 T
+(.) 197.71 329.33 T
+72 286 306 289 C
+72 288.16 306 288.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(4) 72 293 T
+(Where subcontract \336ts in) 99 293 T
+3 10 Q
+0.25 0.16 (A Spring object is perceived by a client as consisting of) 72 269.33 B
+-0.23 (three things: 1\051 a) 72 257.33 P
+4 F
+-0.23 (method table) 141.05 257.33 P
+3 F
+-0.23 (, which contains an entry for) 192.76 257.33 P
+0.05 (each operation implied by the object\325) 72 245.33 P
+0.05 (s type de\336nition; 2\051 a) 220.82 245.33 P
+4 F
+0.25 0.2 (subcontract operations vector) 72 233.33 B
+3 F
+0.25 0.2 ( which specif) 198.32 233.33 B
+0.25 0.2 (ies the basic) 254.21 233.33 B
+0.25 0.07 (subcontract operations described below in Section 5; and) 72 221.33 B
+0.25 0.13 (3\051 some client-local private state, which is referred to as) 72 209.33 B
+(the object\325) 72 197.33 T
+(s) 113.94 197.33 T
+4 F
+(r) 120.33 197.33 T
+(epr) 123.85 197.33 T
+(esentation) 136.81 197.33 T
+3 F
+(.) 177.92 197.33 T
+0.25 0.02 (A client employs a Spring object by invoking methods on) 72 173.33 B
+0.25 0.17 (what appears to be a C++ object. The code for this C++) 72 161.33 B
+0.25 0.18 (object is automatically generated from an IDL interface) 72 149.33 B
+0.25 0.05 (description. This code transforms the method invocations) 72 137.33 B
+0.25 0.01 (into calls on either the object\325) 72 125.33 B
+0.25 0.01 (s regular method table or on) 192.08 125.33 B
+0.25 0.38 (its subcontract operations vector) 72 113.33 B
+0.25 0.38 (. How these methods) 214.5 113.33 B
+(achieve their ef) 72 101.33 T
+(fect is hidden from the client.) 133.46 101.33 T
+-0.2 (If the object is implemented by a remote server) 324 713.33 P
+-0.2 (, then a typ-) 510.83 713.33 P
+0.25 0.1 (ical arrangement will be that the subcontract implements) 324 701.33 B
+0.25 0.04 (the machinery for communicating with the remote server) 324 689.33 B
+0.25 0.04 (,) 555.5 689.33 B
+0.25 0.1 (while the method table consists of pointers to stub meth-) 324 677.33 B
+0.25 0.25 (ods whose sole duty is to marshal the ar) 324 665.33 B
+0.25 0.25 (guments into a) 495.33 665.33 B
+0.25 0.05 (buf) 324 653.33 B
+0.25 0.05 (fer) 337.3 653.33 B
+0.25 0.05 (, call the subcontract to execute the remote call and) 348.15 653.33 B
+0.25 0 (then unmarshal any results from the reply buf) 324 641.33 B
+0.25 0 (fer) 508.27 641.33 B
+0.25 0 (. Figure 3) 518.83 641.33 B
+0.25 0.15 (shows the logical progression of a call to a server) 324 629.33 B
+0.25 0.15 (-based) 531.15 629.33 B
+(Spring object.) 324 617.33 T
+0.25 0.07 (In the remote server there will typically be some subcon-) 324 439.33 B
+0.25 0.31 (tract code to perform any subcontract work associated) 324 427.33 B
+0.25 0.16 (with incoming calls and some server side stub code that) 324 415.33 B
+-0.17 (unmarshals the ar) 324 403.33 P
+-0.17 (guments for each operation and calls into) 394.03 403.33 P
+(the server application.) 324 391.33 T
+324 348 558 351 C
+324 350.16 558 350.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(5) 324 355 T
+(Basic subcontract mechanisms) 351 355 T
+3 10 Q
+0.25 0.07 (T) 324 327.33 B
+0.25 0.07 (o illustrate the subcontract mechanisms, we shall use as) 329.48 327.33 B
+0.25 0.27 (an example a subcontract called) 324 315.33 B
+4 F
+0.25 0.27 (r) 464.16 315.33 B
+0.25 0.27 (eplicon) 467.95 315.33 B
+3 F
+0.25 0.27 (, which is our) 499.29 315.33 B
+(simplest subcontract for supporting replication.) 324 303.33 T
+0.25 0.12 (In replicon, a set of server domains conspire to maintain) 324 279.33 B
+0.05 (the underlying state associated with an object. Each server) 324 267.33 P
+0.25 0.12 (creates a kernel door \050see 3.3 above\051 to accept incoming) 324 255.33 B
+-0.14 (calls on that state. The client domains possess a set of door) 324 243.33 P
+0.25 0.03 (identif) 324 231.33 B
+0.25 0.03 (iers that they use to call through to server domains.) 349.77 231.33 B
+0.25 0.01 (In the case of replicon the clients are required to talk only) 324 219.33 B
+0.25 0.1 (to a single server and the servers are required to perform) 324 207.33 B
+0.25 0.17 (their own state synchronization. \050Other subcontracts for) 324 195.33 B
+(replication use more elaborate rules.\051) 324 183.33 T
+-0.14 (Thus a Spring object built on the replicon subcontract con-) 324 159.33 P
+0.25 0.03 (sists of a method table that consists entirely of stub meth-) 324 147.33 B
+0.18 (ods, a replicon subcontract descriptor and a representation) 324 135.33 P
+-0.14 (that consists of a set of kernel door identi\336ers, one per rep-) 324 123.33 P
+(lica.) 324 111.33 T
+324 90 558 720 C
+324 460 558 614 C
+335.48 578 413.57 587 R
+7 X
+0 K
+V
+3 10 Q
+0 X
+(Client application) 338.83 580.33 T
+327.67 569 421.38 596 R
+0.5 H
+2 Z
+N
+335.48 551 413.57 560 R
+7 X
+V
+0 X
+(Client stubs) 350.77 553.33 T
+327.67 542 421.38 569 R
+N
+335.48 524 413.57 533 R
+7 X
+V
+0 X
+(subcontract) 351.48 526.33 T
+327.67 515 421.38 542 R
+N
+468.07 578 549.39 587 R
+7 X
+V
+0 X
+(Server application) 472.21 580.33 T
+459.94 569 557.53 596 R
+N
+468.07 551 549.39 560 R
+7 X
+V
+0 X
+(Server stubs) 484.15 553.33 T
+459.94 542 557.53 569 R
+N
+468.07 524 549.39 533 R
+7 X
+V
+0 X
+(subcontract) 485.68 526.33 T
+459.94 515 557.53 542 R
+N
+415.78 522.69 413.57 515 411.37 522.69 413.57 521.89 4 Y
+V
+413.57 578 413.57 521.89 2 L
+0.4 H
+N
+412.72 506.75 413.57 515 417.22 507.55 414.83 507.97 4 Y
+V
+203 270 15.62 18 429.2 515 A
+437.12 499.2 444.82 497 437.12 494.8 437.93 497 4 Y
+V
+429.19 497 437.93 497 2 L
+N
+451.89 495.6 443.67 497 451.38 500.17 450.8 497.79 4 Y
+V
+287 360 24.4 18 443.67 515 A
+465.86 570.31 468.07 578 470.27 570.31 468.07 571.11 4 Y
+V
+468.07 515 468.07 571.11 2 L
+N
+327.67 465 561.67 482 R
+7 X
+V
+327.67 467 558 473 C
+327.67 471 561.67 471 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+324 460 558 614 C
+0 9 Q
+0 X
+0 K
+(FIGURE  3.) 327.67 476 T
+1 F
+(Invoking a method on a server-based object) 381.67 476 T
+324 90 558 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+54 75.33 540 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(6) 54 65.62 T
+(Subcontract: A Flexible Base for Distributed Programming) 234 65.62 T
+54 750.68 540 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Basic subcontract mechanisms) 234.98 739.85 T
+53 733.98 539 733.98 2 L
+0.25 H
+N
+0 10 Q
+(5.1) 54 713.33 T
+(Client side subcontract interfaces) 81 713.33 T
+3 F
+(The principal client side subcontract operations are:) 54 697.33 T
+6 11 Q
+(\245) 54 679.33 T
+3 10 Q
+(marshal) 67.75 679.33 T
+6 11 Q
+(\245) 54 664.33 T
+3 10 Q
+(invoke) 67.75 664.33 T
+6 11 Q
+(\245) 54 649.33 T
+3 10 Q
+(unmarshal) 67.75 649.33 T
+6 11 Q
+(\245) 54 634.33 T
+3 10 Q
+(marshal_copy) 67.75 634.33 T
+6 11 Q
+(\245) 54 619.33 T
+3 10 Q
+(invoke_preamble) 67.75 619.33 T
+0 9 Q
+(5.1.1) 54 596 T
+(Marshal) 81 596 T
+3 10 Q
+0.25 0.03 (The subcontract) 54 583.33 B
+4 F
+0.25 0.03 (marshal) 121.58 583.33 B
+3 F
+0.25 0.03 ( operation is used by the stubs to) 154.54 583.33 B
+(transmit an object to another address space.) 54 571.33 T
+0.25 0.04 (Marshal takes the current object and places enough infor-) 54 547.33 B
+0.25 0.11 (mation in a communications buf) 54 535.33 B
+0.25 0.11 (fer so that an essentially) 187.58 535.33 B
+0.25 0.18 (identical object can be unmarshalled from this buf) 54 523.33 B
+0.25 0.18 (fer in) 265.46 523.33 B
+0.25 0.14 (another domain. It then deletes all the local state associ-) 54 511.33 B
+(ated with the object.) 54 499.33 T
+0.25 0.16 (Replicon implements the marshal operation by marshal-) 54 475.33 B
+0.25 0.31 (ling the count of door identif) 54 463.33 B
+0.25 0.31 (iers and then marshalling) 179.11 463.33 B
+(each of its door identi\336ers in turn.) 54 451.33 T
+0 9 Q
+(5.1.2) 54 428 T
+(Unmarshal) 81 428 T
+3 10 Q
+0.02 (The) 54 415.33 P
+4 F
+0.02 (unmarshal) 72.07 415.33 P
+3 F
+0.02 ( operation is used when receiving an object) 114.85 415.33 P
+0.21 (from another domain. Its job is to fabricate a fully \337edged) 54 403.33 P
+0.25 0.18 (Spring object, consisting of a method table, subcontract) 54 391.33 B
+(operations vector) 54 379.33 T
+(, and representation.) 122.75 379.33 T
+0.13 (When a stub decides to read an object from a communica-) 54 355.33 P
+0.2 (tions buf) 54 343.33 P
+0.2 (fer) 89.3 343.33 P
+0.2 (, it must choose both an initial subcontract and) 100 343.33 P
+0.25 0.11 (an initial method table based on the expected type of the) 54 331.33 B
+-0.2 (object. It then invokes the initial subcontract, passing it the) 54 319.33 P
+(initial method table and the buf) 54 307.33 T
+(fer) 179.09 307.33 T
+(.) 189.64 307.33 T
+-0.07 (The subcontract must then fabricate an object based on the) 54 283.33 P
+0.25 0.09 (information in the communications buf) 54 271.33 B
+0.25 0.09 (fer) 214.97 271.33 B
+0.25 0.09 (. This typically) 225.8 271.33 B
+0.25 0.08 (involves reading enough information from the communi-) 54 259.33 B
+(cations buf) 54 247.33 T
+(fer to be able to create a representation.) 97.98 247.33 T
+-0.23 (In the case of replicon, this normally involves reading a set) 54 223.33 P
+0.25 0.19 (of kernel door identif) 54 211.33 B
+0.25 0.19 (iers from the buf) 143.62 211.33 B
+0.25 0.19 (fer and creating a) 214.34 211.33 B
+0.25 0.18 (representation to hold them. \050Section 6 below discusses) 54 199.33 B
+(what happens in some abnormal cases.\051) 54 187.33 T
+0.25 0.52 (Finally the subcontract\325) 54 163.33 B
+0.25 0.52 (s unmarshal operation plugs) 161.33 163.33 B
+-0 (together its own subcontract operations vector) 54 151.33 P
+-0 (, the method) 238.28 151.33 P
+0.11 (table pointer and the representation to create a new Spring) 54 139.33 P
+(object.) 54 127.33 T
+0 9 Q
+(5.1.3) 306 714 T
+(Invoke) 333 714 T
+3 10 Q
+0.25 0.05 (The) 306 701.33 B
+4 F
+0.25 0.05 (invoke) 324.49 701.33 B
+3 F
+0.25 0.05 ( operation is used by the stubs to actually exe-) 350.87 701.33 B
+0.25 0.05 (cute an object call, after the stubs have marshalled all the) 306 689.33 B
+0.25 0.37 (ar) 306 677.33 B
+0.25 0.37 (guments. Invoke is given an ar) 314.33 677.33 B
+0.25 0.37 (gument buf) 449.32 677.33 B
+0.25 0.37 (fer and is) 498.94 677.33 B
+(expected to return a result buf) 306 665.33 T
+(fer) 425.51 665.33 T
+(.) 436.06 665.33 T
+0.25 0.09 (Replicon implements the invoke operation using the ker-) 306 641.33 B
+0.25 0.23 (nel\325) 306 629.33 B
+0.25 0.23 (s door invocation mechanism. Replicon attempts to) 321.94 629.33 B
+0.01 (invoke each of its door identi\336ers in turn. If the door invo-) 306 617.33 P
+0.25 0.11 (cation fails due to a communications error) 306 605.33 B
+0.25 0.11 (, then replicon) 480.5 605.33 B
+0.25 0.06 (deletes that door identif) 306 593.33 B
+0.25 0.06 (ier from its set of tar) 402.34 593.33 B
+0.25 0.06 (gets and pro-) 486.66 593.33 B
+0.25 0.15 (ceeds to try the next door identif) 306 581.33 B
+0.25 0.15 (ier) 442.12 581.33 B
+0.25 0.15 (. Otherwise, replicon) 452.58 581.33 B
+(returns the result of the door invocation back to the stubs.) 306 569.33 T
+0.25 0.11 (The replicon invoke protocol also piggybacks some sub-) 306 545.33 B
+0.25 0.07 (contract control information in the call and reply buf) 306 533.33 B
+0.25 0.07 (fers.) 522.22 533.33 B
+(This is used to support changes to the replica set.) 306 521.33 T
+0 9 Q
+(5.1.4) 306 498 T
+(Invoke_preamble) 333 498 T
+3 10 Q
+-0.12 (The subcontract invoke operation is only executed after all) 306 485.33 P
+-0.11 (the ar) 306 473.33 P
+-0.11 (gument marshalling has already occurred. In practice) 328.2 473.33 P
+0.07 (it was noted that there are cases where an object\325) 306 461.33 P
+0.07 (s subcon-) 501.88 461.33 P
+0.2 (tract would like to become involved earlier in the process,) 306 449.33 P
+0.25 0.12 (so that it can either write some subcontract-level control) 306 437.33 B
+0.25 0.09 (information into the communications buf) 306 425.33 B
+0.25 0.09 (fer or adjust the) 474.77 425.33 B
+(communications buf) 306 413.33 T
+(fer to in\337uence future marshalling.) 387.76 413.33 T
+0.25 0.16 (For example we have some subcontracts that use shared) 306 389.33 B
+-0.02 (memory regions to communicate with their servers. In this) 306 377.33 P
+0.25 0.02 (case when invoke_preamble is called, the subcontract can) 306 365.33 B
+0.25 0.06 (adjust the communications buf) 306 353.33 B
+0.25 0.06 (fer to point into the shared) 431.33 353.33 B
+0.25 0.07 (memory region so that ar) 306 341.33 B
+0.25 0.07 (guments are directly marshalled) 409.08 341.33 B
+0.25 0.01 (into the region, rather than having to be copied there after) 306 329.33 B
+(all marshalling is complete.) 306 317.33 T
+0.25 0.14 (T) 306 293.33 B
+0.25 0.14 (o enable the subcontract to set up any needed state, we) 311.55 293.33 B
+0.25 0.25 (introduced the subcontract operation) 306 281.33 B
+4 F
+0.25 0.25 (invoke_pr) 465.21 281.33 B
+0.25 0.25 (eamble) 507.1 281.33 B
+3 F
+0.25 0.25 (,) 537.5 281.33 B
+0.25 0.43 (which is called before any ar) 306 269.33 B
+0.25 0.43 (gument marshalling has) 434.86 269.33 B
+(begun.) 306 257.33 T
+0 9 Q
+(5.1.5) 306 234 T
+(Marshal_copy) 333 234 T
+3 10 Q
+0.25 0.27 (Our interface def) 306 221.33 B
+0.25 0.27 (inition language supports a parameter) 378.81 221.33 B
+0.25 0.08 (passing mode called) 306 209.33 B
+4 F
+0.25 0.08 (copy) 391.86 209.33 B
+3 F
+0.25 0.08 (. This mode implies that a copy) 410.4 209.33 B
+0.25 0.25 (of the ar) 306 197.33 B
+0.25 0.25 (gument object is transmitted, while the calling) 341.86 197.33 B
+(domain retains the original object.) 306 185.33 T
+0.25 0.01 (This mode was originally implemented by f) 306 161.33 B
+0.25 0.01 (irst calling the) 482.19 161.33 B
+0.25 0.05 (subcontract copy operation \050see 5.1.6 below\051 and then by) 306 149.33 B
+0.25 0.31 (calling the subcontract marshal operation on the copy) 306 137.33 B
+0.25 0.31 (.) 537.5 137.33 B
+-0.12 (However) 306 125.33 P
+-0.12 (, it was observed that this frequently led to redun-) 342.25 125.33 P
+0.05 (dant work in generating a copy that was immediately mar-) 306 113.33 P
+(shalled and then deleted.) 306 101.33 T
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(Subcontract: A Flexible Base for Distributed Programming) 232 64.95 T
+-2.22 (7) 552.55 64.95 P
+72 750.68 558 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Subcontract conventions) 265.73 739.85 T
+71 733.98 557 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.25 (The marshal_copy operation allows us to optimize this) 72 713.33 B
+0.23 (common case. It is de\336ned to produce the ef) 72 701.33 P
+0.23 (fect of a copy) 250.6 701.33 P
+0.25 0.06 (followed by a marshal, but it is permitted to optimize out) 72 689.33 B
+(some of the intermediate steps.) 72 677.33 T
+0 9 Q
+(5.1.6) 72 654 T
+(Other client subcontract operations) 99 654 T
+3 10 Q
+0.25 0.26 (The client subcontract provides operations for copying) 72 641.33 B
+0.25 0.06 (and deleting objects. This control over copy and delete is) 72 629.33 B
+0.25 0.06 (important for subcontracts that are maintaining dialogues) 72 617.33 B
+0.25 0.08 (between a server and each of its extant client objects and) 72 605.33 B
+(that may wish to notify the server of births and deaths.) 72 593.33 T
+0.25 0.2 (The client subcontract also provides operations for per-) 72 569.33 B
+-0.07 (forming run-time type queries and a few other minor oper-) 72 557.33 P
+(ations.) 72 545.33 T
+0 F
+(5.2) 72 513.33 T
+(Server side subcontract operations) 99 513.33 T
+3 F
+0.25 0.17 (Many subcontracts support client-server computing. W) 72 497.33 B
+0.25 0.17 (e) 301.56 497.33 B
+0.25 0.01 (have described the client side view of subcontract, but for) 72 485.33 B
+0.25 0.39 (server) 72 473.33 B
+0.25 0.39 (-based objects there is also a certain amount of) 98.56 473.33 B
+(machinery on the server side.) 72 461.33 T
+0.25 0.36 (On the client side, we attempt to hide the subcontract) 72 437.33 B
+0.25 0.08 (implementation from application programmers. However) 72 425.33 B
+0.25 0.03 (on the server side, we are prepared to allow server imple-) 72 413.33 B
+0.25 0.17 (mentations to be more tightly coupled to particular sub-) 72 401.33 B
+0.25 0.48 (contracts. For example a replicated subcontract may) 72 389.33 B
+0.16 (require special interfaces to the server application in order) 72 377.33 P
+(to support replication.) 72 365.33 T
+0.25 0.39 (Thus the server side interfaces can vary considerably) 72 341.33 B
+0.25 0.1 (between subcontracts. However) 72 329.33 B
+0.25 0.1 (, there are three elements) 202.35 329.33 B
+0.25 0.23 (that are typically present: support for creating a Spring) 72 317.33 B
+0.25 0.1 (object from a language-level object, support for process-) 72 305.33 B
+(ing incoming calls, and support for revoking an object.) 72 293.33 T
+0 9 Q
+(5.2.1) 72 270 T
+(Creating a Spring object) 99 270 T
+3 10 Q
+0.25 0.51 (Subcontracts must provide a way of creating Spring) 72 257.33 B
+0.25 0.06 (objects from language-level objects. This can take one of) 72 245.33 B
+(two forms.) 72 233.33 T
+0.25 0.15 (The simplest form is that a subcontract creates a normal) 72 209.33 B
+0.25 0.18 (client side Spring object. This means that it must create) 72 197.33 B
+0.02 (some kind of communication endpoint \050for example a ker-) 72 185.33 P
+0.25 0.12 (nel door\051 and fabricate a client side Spring object whose) 72 173.33 B
+(representation uses that endpoint.) 72 161.33 T
+0.25 0.14 (However) 72 137.33 B
+0.25 0.14 (, some subcontracts provide special support for) 109.26 137.33 B
+0.25 0.26 (Spring objects that reside in the same address space as) 72 125.33 B
+0.24 (their server) 72 113.33 P
+0.24 (, by providing an optimized invocation mecha-) 117.1 113.33 P
+0.1 (nism for use within a single address space. When a Spring) 72 101.33 P
+0.25 0 (object is created using such a subcontract, it will typically) 324 713.33 B
+0.25 0.04 (fabricate an object using a special server) 324 701.33 B
+0.25 0.04 (-side subcontract) 489.09 701.33 B
+0.25 0.51 (operations vector and it will try to avoid paying the) 324 689.33 B
+0.25 0.15 (expense of creating resources required for cross-domain) 324 677.33 B
+0.25 0.17 (communication. When and if the object is actually mar-) 324 665.33 B
+0.25 0.19 (shalled for transmission to another domain, the subcon-) 324 653.33 B
+(tract will \336nally create these resources.) 324 641.33 T
+0 9 Q
+(5.2.2) 324 618 T
+(Processing incoming calls) 351 618 T
+3 10 Q
+0.25 0.09 (Occasionally a subcontract will create a communications) 324 605.33 B
+0.25 0.34 (endpoint that delivers an incoming call directly to the) 324 593.33 B
+0.25 0.21 (server side stubs. More commonly) 324 581.33 B
+0.25 0.21 (, the subcontract will) 469.02 581.33 B
+0.25 0.09 (arrange that the incoming call arrives f) 324 569.33 B
+0.25 0.09 (irst in the subcon-) 483.7 569.33 B
+0.25 0.1 (tract, which then forwards the call to the stub level. This) 324 557.33 B
+0.25 0.02 (permits the server) 324 545.33 B
+0.25 0.02 (-side subcontract to maintain a dialogue) 396.3 545.33 B
+0.25 0.12 (with the corresponding client-side subcontract by piggy-) 324 533.33 B
+(backing additional information on calls and replies.) 324 521.33 T
+0 9 Q
+(5.2.3) 324 498 T
+(Revoking an object) 351 498 T
+3 10 Q
+0.25 0.04 (Occasionally a server will decide that it wishes to discard) 324 485.33 B
+0.25 0.25 (a piece of state, even though there are clients who cur-) 324 473.33 B
+0.25 0.12 (rently have objects pointing at that state. This is particu-) 324 461.33 B
+0.25 0.12 (larly important for operating system services which may) 324 449.33 B
+0.25 0.02 (wish to reclaim resources without waiting for all their cli-) 324 437.33 B
+0.25 0 (ents to consent. Thus typical server) 324 425.33 B
+0.25 0 (-side subcontracts pro-) 466.31 425.33 B
+0.25 0.69 (vide a way for the server application to revoke an) 324 413.33 B
+0.25 0.02 (outstanding object. For example, this can be implemented) 324 401.33 B
+0.25 0.43 (by revoking any underlying kernel doors, which will) 324 389.33 B
+(ef) 324 377.33 T
+(fectively prevent further incoming kernel calls.) 331.59 377.33 T
+324 334 558 337 C
+324 336.16 558 336.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(6) 324 341 T
+(Subcontract conventions) 351 341 T
+0 10 Q
+(6.1) 324 305.33 T
+(Compatible subcontracts) 351 305.33 T
+3 F
+-0.16 (Clearly it is desirable for dif) 324 289.33 P
+-0.16 (ferent objects to have dif) 436.07 289.33 P
+-0.16 (ferent) 534.68 289.33 P
+0.25 0.33 (subcontracts. In particular) 324 277.33 B
+0.25 0.33 (, two objects which are per-) 437.12 277.33 B
+0.25 0.16 (ceived by the client application as having the same type) 324 265.33 B
+(may in fact have dif) 324 253.33 T
+(ferent subcontracts.) 403.8 253.33 T
+0.25 0.23 (For example, the standard type) 324 229.33 B
+4 F
+0.25 0.23 (f) 458.49 229.33 B
+0.25 0.23 (ile) 460.94 229.33 B
+3 F
+0.25 0.23 ( is specif) 471.64 229.33 B
+0.25 0.23 (ied to use a) 509.44 229.33 B
+0.25 1.17 (simple subcontract called) 324 217.33 B
+4 F
+0.25 1.17 (singleton) 459.43 217.33 B
+3 F
+0.25 1.17 (. The type) 506.66 217.33 B
+4 F
+0.25 0.27 (cacheable_f) 324 205.33 B
+0.25 0.27 (ile) 374.73 205.33 B
+3 F
+0.25 0.27 ( is a subtype of f) 385.54 205.33 B
+0.25 0.27 (ile, but instead uses the) 457.47 205.33 B
+4 F
+0.25 0.16 (caching) 324 193.33 B
+3 F
+0.25 0.16 ( subcontract. So what happens when we send an) 356.74 193.33 B
+0.09 (object of type cacheable \336le where an object of type \336le is) 324 181.33 P
+0.25 0.05 (expected? Clearly if the receiver insists on unmarshalling) 324 169.33 B
+0.25 0.03 (the caching object as though it were a singleton, then it is) 324 157.33 B
+0.25 0.08 (going to be disappointed. For each type we can specify a) 324 145.33 B
+0.25 0.1 (default subcontract for use when talking to that type, but) 324 133.33 B
+0.25 0.04 (how do we cope when we actually need to use a dif) 324 121.33 B
+0.25 0.04 (ferent) 534.46 121.33 B
+(subcontract?) 324 109.33 T
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+54 75.33 540 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(8) 54 65.62 T
+(Subcontract: A Flexible Base for Distributed Programming) 234 65.62 T
+54 750.68 540 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(The life-cycle of a Spring object) 234.23 739.85 T
+53 733.98 539 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.1 (W) 54 713.33 B
+0.25 0.1 (e solve this problem by introducing the notion of) 62.74 713.33 B
+4 F
+0.25 0.1 (com-) 267.82 713.33 B
+0.25 0 (patible subcontracts) 54 701.33 B
+3 F
+0.25 0 (. Subcontract A is said to be) 135.66 701.33 B
+4 F
+0.25 0 (compati-) 252.44 701.33 B
+0.25 0.45 (ble) 54 689.33 B
+3 F
+0.25 0.45 ( with subcontract B if the unmarshalling code for) 67.58 689.33 B
+0.25 0.04 (subcontract B can correctly cope with receiving an object) 54 677.33 B
+(of subcontract A.) 54 665.33 T
+0.25 0.11 (The normal mechanism we use to implement compatible) 54 641.33 B
+-0.14 (subcontracts is to include a subcontract identi\336er as part of) 54 629.33 P
+(the marshalled form of each object.) 54 617.33 T
+-0.05 (So a typical subcontract unmarshal operation starts by tak-) 54 593.33 P
+0.25 0.29 (ing a peek at the expected subcontract identif) 54 581.33 B
+0.25 0.29 (ier in the) 249.34 581.33 B
+0.25 0.05 (communications buf) 54 569.33 B
+0.25 0.05 (fer) 136.98 569.33 B
+0.25 0.05 (. If it contains the expected identi-) 147.69 569.33 B
+0.25 0.07 (f) 54 557.33 B
+0.25 0.07 (ier for the current subcontract, then the subcontract goes) 56.85 557.33 B
+0.25 0.11 (ahead and unmarshals the object. However if the unmar-) 54 545.33 B
+0.25 0.21 (shal operation sees some other value then it calls into a) 54 533.33 B
+0.25 0.02 (registry to locate the correct code for that subcontract and) 54 521.33 B
+(then calls that subcontract to perform the unmarshalling.) 54 509.33 T
+0 F
+(6.2) 54 477.33 T
+(Discovering new subcontracts) 81 477.33 T
+3 F
+0.25 0.1 (A program will typically be linked with a set of libraries) 54 461.33 B
+0.25 0.23 (that provide a set of standard subcontracts. However at) 54 449.33 B
+0.25 0.22 (run-time the program may encounter objects which use) 54 437.33 B
+(subcontracts that are not in its standard libraries.) 54 425.33 T
+-0.23 (W) 54 401.33 P
+-0.23 (e provide a mechanism to map from subcontract identi\336-) 62.64 401.33 P
+0.25 0.2 (ers to library names and we support dynamic linking of) 54 389.33 B
+(libraries to obtain new subcontracts.) 54 377.33 T
+0.04 (Say that a domain is expecting to receive an object of type) 54 353.33 P
+0.04 (\336le, using the singleton subcontract, but we instead send it) 54 341.33 P
+-0.12 (an object of type replicated_\336le using the replicon subcon-) 54 329.33 P
+0.02 (tract. The singleton unmarshal operation will discover that) 54 317.33 P
+0.25 0.21 (it is dealing with a dif) 54 305.33 B
+0.25 0.21 (ferent subcontract and it will call) 147.64 305.33 B
+0.25 0.13 (into the domain\325) 54 293.33 B
+0.25 0.13 (s subcontract registry to f) 122.19 293.33 B
+0.25 0.13 (ind the correct) 227.88 293.33 B
+0.25 0.13 (subcontract code. The registry will discover that there is) 54 281.33 B
+0.25 0.15 (currently no suitable subcontract loaded, but it will then) 54 269.33 B
+0.25 0.37 (use a network naming context to map the subcontract) 54 257.33 B
+0.25 0.07 (identif) 54 245.33 B
+0.25 0.07 (ier into a library name \050e.g. replicon.so\051 and it will) 80.03 245.33 B
+0.25 0.02 (then dynamically link in that library to obtain the subcon-) 54 233.33 B
+0.25 0.16 (tract. Unmarshalling can then continue, using the newly) 54 221.33 B
+(linked subcontract code.) 54 209.33 T
+0.25 0.05 (So even though the program had no concept of replicated) 54 185.33 B
+0.25 0.04 (objects and was not initially linked with any libraries that) 54 173.33 B
+0.25 0.22 (understood replicated objects, we were able to dynami-) 54 161.33 B
+-0.19 (cally obtain the right code to talk to a replicated \336le object.) 54 149.33 P
+0.25 0.03 (This mechanism means that it is possible to add new sub-) 54 125.33 B
+0.25 0.05 (contracts and use them to talk to old applications without) 54 113.33 B
+0.23 (changing either the old applications or the standard librar-) 54 101.33 P
+0.08 (ies, provided only that we can make a suitable subcontract) 306 713.33 P
+(library available at run-time to the old programs.) 306 701.33 T
+0.25 0.04 (Many domains, particularly systems servers, are reluctant) 306 677.33 B
+0.25 0.16 (to simply run some random dynamic library code nomi-) 306 665.33 B
+0.25 0.23 (nated by a potentially malicious client. So, for security) 306 653.33 B
+0.11 (reasons the dynamic linker will only load libraries that are) 306 641.33 P
+0.25 0.02 (on a designated directory search-path of trustworthy loca-) 306 629.33 B
+0.25 0.06 (tions. So it typically requires intervention by a privileged) 306 617.33 B
+-0.12 (system administrator to install a new subcontract library in) 306 605.33 P
+0.25 0.3 (a standard directory which most domains will have on) 306 593.33 B
+(their search paths.) 306 581.33 T
+0 F
+(6.3) 306 549.33 T
+(Subcontracts and object types) 333 549.33 T
+3 F
+0.25 0.18 (Subcontracts af) 306 533.33 B
+0.25 0.18 (fect objects\325 semantics. Dif) 370.73 533.33 B
+0.25 0.18 (ferent imple-) 485.82 533.33 B
+-0.08 (mentations of a type such as \336le may use dif) 306 521.33 P
+-0.08 (ferent subcon-) 482.6 521.33 P
+0.05 (tracts which provide substantially dif) 306 509.33 P
+0.05 (ferent semantics. It is) 454.32 509.33 P
+-0.19 (necessary to provide a way for application programmers to) 306 497.33 P
+(determine the real semantics of particular objects.) 306 485.33 T
+0.25 0.17 (Fortunately) 306 461.33 B
+0.25 0.17 (, this is easy to express in an object-oriented) 353.32 461.33 B
+0.25 0.38 (type system. W) 306 449.33 B
+0.25 0.38 (e def) 372.92 449.33 B
+0.25 0.38 (ine standard base types with core) 394.21 449.33 B
+0.25 0.31 (semantics for various abstractions. Other types inherit) 306 437.33 B
+0.25 0.17 (from these standard types and add additional semantics,) 306 425.33 B
+0.25 0.12 (such as replication. It is the responsibility of each object) 306 413.33 B
+0.25 0.22 (implementor to select both a type for their object and a) 306 401.33 B
+0.25 0.09 (subcontract that meets the semantic commitments of that) 306 389.33 B
+0.25 0.24 (type. Clients may attempt to narrow an object\325) 306 377.33 B
+0.25 0.24 (s type at) 504.26 377.33 B
+0.25 0.39 (run-time to determine if a given object of a statically) 306 365.33 B
+0.25 0.08 (determined type, such as f) 306 353.33 B
+0.25 0.08 (ile, actually supports a subtype) 413.09 353.33 B
+(with richer semantics, such as replicated \336le.) 306 341.33 T
+306 298 540 301 C
+306 300.16 540 300.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(7) 306 305 T
+(The life-cycle of a Spring object) 333 305 T
+3 10 Q
+0.25 0.12 (It may be useful to review the various points where sub-) 306 281.33 B
+(contract is used during the lifetime of a particular object.) 306 269.33 T
+0.25 0.17 (Say that a f) 306 245.33 B
+0.25 0.17 (ileserver FS is exporting objects of type f) 353.45 245.33 B
+0.25 0.17 (ile,) 527 245.33 B
+0.25 0.03 (using the) 306 233.33 B
+4 F
+0.25 0.03 (simplex) 345.7 233.33 B
+3 F
+0.25 0.03 ( subcontract. The simplex subcontract is) 376.46 233.33 B
+0.05 (a very simple client-server subcontract, using a single ker-) 306 221.33 P
+(nel door identi\336er to communicate with the server) 306 209.33 T
+(.) 505.7 209.33 T
+0.25 0.07 (The f) 306 185.33 B
+0.25 0.07 (ileserver starts with some internal state describing a) 327.45 185.33 B
+0.25 0.11 (f) 306 173.33 B
+0.25 0.11 (ile. It then uses the server) 308.89 173.33 B
+0.25 0.11 (-side code of the simplex sub-) 415.32 173.33 B
+0.25 0.05 (contract to create a Spring object. At this point the server) 306 161.33 B
+0.25 0.21 (application must specify a method table, a set of server) 306 149.33 B
+0.25 0.04 (side stubs and a pointer to the internal f) 306 137.33 B
+0.25 0.04 (ile state. The sim-) 466.9 137.33 B
+0.25 0.13 (plex server code creates a kernel door to act as the entry) 306 125.33 B
+-0.21 (point for this particular piece of \336le state and returns a new) 306 113.33 P
+0.25 0 (Spring object. This object consists of a pointer to the sim-) 306 101.33 B
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(Subcontract: A Flexible Base for Distributed Programming) 232 64.95 T
+-2.22 (9) 552.55 64.95 P
+72 750.68 558 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Example subcontracts) 270.73 739.85 T
+71 733.98 557 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.04 (plex subcontract, a pointer to the given method table, and) 72 713.33 B
+0.02 (a pointer to a representation consisting of a door identi\336er) 72 701.33 P
+0.02 (.) 303.5 701.33 P
+(See Figure 4.) 72 689.33 T
+-0.08 (Initially) 72 500.46 P
+-0.08 (, the new \336le object is in the same address space as) 103.02 500.46 P
+0.25 0.12 (its creator) 72 488.46 B
+0.25 0.12 (. But let\325) 112.68 488.46 B
+0.25 0.12 (s say it gets passed to another address) 149.06 488.46 B
+0.25 0.12 (space as a result of an operation on a f) 72 476.46 B
+0.25 0.12 (ile_system object.) 231.49 476.46 B
+0.25 0.62 (When the f) 72 464.46 B
+0.25 0.62 (ile object is transmitted, the server) 122.53 464.46 B
+0.25 0.62 (-side) 284.1 464.46 B
+0.25 0.15 (f) 72 452.46 B
+0.25 0.15 (ile_system stubs will invoke the object\325) 74.93 452.46 B
+0.25 0.15 (s subcontract to) 240.41 452.46 B
+0.16 (marshal the object into a buf) 72 440.46 P
+0.16 (fer) 186.75 440.46 P
+0.16 (. Simplex will deposit both) 197.3 440.46 P
+0.25 0.1 (its own subcontract ID and the object\325) 72 428.46 B
+0.25 0.1 (s door identif) 229.66 428.46 B
+0.25 0.1 (ier in) 284.4 428.46 B
+-0.03 (the buf) 72 416.46 P
+-0.03 (fer) 99.84 416.46 P
+-0.03 (. At the receiving end, the client-side \336le_system) 110.39 416.46 P
+0.25 0.14 (stubs will attempt to unmarshal a f) 72 404.46 B
+0.25 0.14 (ile object. Since f) 216.02 404.46 B
+0.25 0.14 (ile\325) 288.79 404.46 B
+0.25 0.14 (s) 302.11 404.46 B
+0.25 0.03 (default subcontract is singleton, they will initially call the) 72 392.46 B
+0.25 0.42 (singleton unmarshal method. However singleton will) 72 380.46 B
+0.25 0.12 (quickly realize that the buf) 72 368.47 B
+0.25 0.12 (fer holds a subcontract ID for) 183.32 368.47 B
+0.25 0.12 (another subcontract and will use the subcontract registry) 72 356.47 B
+0.25 0.02 (to locate the code for simplex and ask simplex to perform) 72 344.47 B
+0.25 0.14 (the unmarshalling. Simplex will read the subcontract ID) 72 332.47 B
+-0.22 (and door identi\336er and create an appropriate Spring object.) 72 320.47 P
+0.25 0.34 (When a client attempts to invoke a method on the f) 72 296.47 B
+0.25 0.34 (ile) 295.32 296.47 B
+0.25 0.56 (object, they will invoke a method from the object\325) 72 284.47 B
+0.25 0.56 (s) 302.11 284.47 B
+0.25 0.2 (method table, which will be implemented by the client-) 72 272.47 B
+-0.07 (side stubs. These stubs will start by calling the \336le object\325) 72 260.47 P
+-0.07 (s) 302.11 260.47 P
+0.25 0.18 (subcontract invoke_preamble operation. In this case the) 72 248.47 B
+0.25 0.62 (simplex invoke_preamble does nothing and simply) 72 236.47 B
+0.25 0.21 (returns. After marshalling the ar) 72 224.47 B
+0.25 0.21 (guments, the stubs will) 208.37 224.47 B
+0.25 0.14 (invoke the object\325) 72 212.47 B
+0.25 0.14 (s subcontract invoke operation. In this) 146.68 212.47 B
+0.25 0.12 (case the simplex invoke operation uses the kernel\325) 72 200.47 B
+0.25 0.12 (s door) 280.44 200.47 B
+0.25 0.08 (IPC mechanism to call through to the server) 72 188.47 B
+0.25 0.08 (. This propa-) 253.19 188.47 B
+0.25 0.1 (gates the call to the server) 72 176.47 B
+0.25 0.1 (-side simplex code, which for-) 180.13 176.47 B
+0.25 0.15 (wards the call to the server) 72 164.47 B
+0.25 0.15 (-side f) 184.65 164.47 B
+0.25 0.15 (ile stubs and thence up) 210.65 164.47 B
+0.25 0.01 (into the server application. The reply similarly f) 72 152.47 B
+0.25 0.01 (lows back) 265.39 152.47 B
+0.25 0.38 (through the server) 72 140.47 B
+0.25 0.38 (-side stubs, the server) 151.81 140.47 B
+0.25 0.38 (-side simplex) 247.64 140.47 B
+0.25 0.24 (code, the kernel, the client-side simplex code and back) 72 128.47 B
+0.25 0.41 (into the client-side stubs. Those stubs unmarshal any) 72 116.47 B
+(results and return them to the client application.) 72 104.47 T
+72 90 306 720 C
+72 521.13 306 686 C
+190 543.5 306 686 C
+190 543.5 321 686 R
+7 X
+0 K
+V
+258.83 634.75 303 655.58 R
+V
+3 8 Q
+0 X
+(server) 271.14 650.25 T
+(application) 263.14 640.25 T
+0.4 H
+2 Z
+90 450 61.58 58.42 191.92 616.63 A
+7 X
+90 450 39 34.6 192.67 614.93 G
+0 X
+90 450 39 34.6 192.67 614.93 A
+(simplex) 196.75 626.75 T
+(server-side) 191.87 616.75 T
+(server) 198.9 661.75 T
+(file stubs) 194.11 651.75 T
+274.83 601.75 298.5 622.08 R
+7 X
+V
+0 X
+(file) 281.33 616.75 T
+(state) 279.33 606.75 T
+272 598.75 302 625.25 R
+N
+264.81 613.46 272.5 611.25 264.81 609.04 265.61 611.25 4 Y
+V
+215.5 611.25 265.61 611.25 2 L
+N
+190.25 674.75 190.5 558 2 L
+N
+72 521.13 306 686 C
+72 544 167.5 685 C
+42 544 167.5 685 R
+7 X
+0 K
+V
+0.4 H
+2 Z
+0 X
+90 450 61.58 58.42 165.17 616.63 A
+3 8 Q
+(client) 82.03 661.75 T
+( application) 72.14 651.75 T
+7 X
+90 450 39 34.6 164.42 614.93 G
+0 X
+90 450 39 34.6 164.42 614.93 A
+7 X
+90 450 20.75 18.54 165.67 614.24 G
+0 X
+90 450 20.75 18.54 165.67 614.24 A
+(door) 150.83 620.87 T
+(id) 155.05 610.87 T
+(simplex) 140 634.25 T
+(file stubs) 131.86 656.25 T
+167 675 167 558.5 2 L
+N
+97.31 630.21 105 628 97.31 625.79 98.11 628 4 Y
+V
+82.75 628 98.11 628 2 L
+N
+72 521.13 306 686 C
+182.56 618.96 190.25 616.75 182.56 614.54 183.36 616.75 4 Y
+0 X
+0 K
+V
+168 616.75 183.36 616.75 2 L
+0.4 H
+2 Z
+N
+75.83 519.33 298.17 538.83 R
+7 X
+V
+75.83 523.83 298.17 529.83 C
+75.83 527.83 309.83 527.83 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+72 521.13 306 686 C
+0 9 Q
+0 X
+0 K
+(FIGURE  4.) 75.83 532.83 T
+1 F
+(A \336le object using the simplex subcontract) 129.83 532.83 T
+72 90 306 720 C
+0 0 612 792 C
+3 10 Q
+0 X
+0 K
+-0.16 (Another event that may befall our \336le object is that a client) 324 713.33 P
+0.06 (may want to copy the \336le object so they can send the copy) 324 701.33 P
+0.25 0.1 (on to some other application. \050Note that this is a shallow) 324 689.33 B
+0.25 0.07 (copy) 324 677.33 B
+0.25 0.07 (, in which both the original and the copy refer to the) 343.08 677.33 B
+0.25 0.05 (same underlying state.\051 This can be done by invoking the) 324 665.33 B
+0.12 (object\325) 324 653.33 P
+0.12 (s subcontract copy method. In this case the simplex) 351.22 653.33 P
+0.23 (copy method will fabricate a new Spring object by simply) 324 641.33 P
+0.25 0.12 (copying its method table pointer and subcontract pointer) 324 629.33 B
+(and by asking the kernel to copy its door identi\336er) 324 617.33 T
+(.) 524.82 617.33 T
+0.25 0.15 (Finally) 324 593.33 B
+0.25 0.15 (, alas, the client application may be f) 352.77 593.33 B
+0.25 0.15 (inished with) 506.89 593.33 B
+0.21 (the \336le object. At this point it can invoke the object\325) 324 581.33 P
+0.21 (s sub-) 534.18 581.33 P
+0.25 0.09 (contract consume method. In this case, simplex consume) 324 569.33 B
+0.25 0.02 (will simply tell the kernel to delete the door identif) 324 557.33 B
+0.25 0.02 (ier and) 530.16 557.33 B
+-0.03 (return. Later) 324 545.33 P
+-0.03 (, when all active door identi\336ers for the server) 373.55 545.33 P
+0.25 0.13 (door have been deleted, the kernel will notify the door) 324 533.33 B
+0.25 0.13 (\325) 551.2 533.33 B
+0.25 0.13 (s) 554.11 533.33 B
+0.25 0.06 (tar) 324 521.33 B
+0.25 0.06 (get, in this case the server) 334.55 521.33 B
+0.25 0.06 (-side simplex code, so that it) 440.58 521.33 B
+(can clean up.) 324 509.33 T
+0.25 0.06 (Notice how the simplex subcontract has been involved in) 324 485.33 B
+-0.24 (all the key events of the object\325) 324 473.33 P
+-0.24 (s life: its birth, its reproduc-) 447.54 473.33 P
+0.25 0.25 (tion, its death, its transfer between address spaces, and) 324 461.33 B
+0.25 0.15 (f) 324 449.33 B
+0.25 0.15 (inally and most importantly) 326.93 449.33 B
+0.25 0.15 (, simplex has been involved) 441.82 449.33 B
+-0.06 (whenever any invocations occurred on the object. Simplex) 324 437.33 P
+0.25 0.18 (chooses to make only fairly limited use of these control) 324 425.33 B
+(points. Other subcontracts are rather more venturesome.) 324 413.33 T
+324 370 558 373 C
+324 372.16 558 372.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(8) 324 377 T
+(Example subcontracts) 351 377 T
+3 10 Q
+0.25 0.24 (W) 324 353.33 B
+0.25 0.24 (e have already described the replicon subcontract \050in) 332.88 353.33 B
+0.25 0.03 (Section 5\051 and the simplex subcontract \050in Section 7\051. W) 324 341.33 B
+0.25 0.03 (e) 553.46 341.33 B
+0.25 0.2 (now provide a short overview of some other interesting) 324 329.33 B
+0.25 0.13 (subcontracts we have developed. For brevity) 324 317.33 B
+0.25 0.13 (, we merely) 509.23 317.33 B
+0.25 0.07 (provide simplif) 324 305.33 B
+0.25 0.07 (ied outlines of their key features and omit) 386.21 305.33 B
+(descriptions of error conditions and special optimizations.) 324 293.33 T
+0 F
+(8.1) 324 261.33 T
+(The cluster subcontract) 351 261.33 T
+3 F
+0.25 0.23 (The simplex subcontract uses a distinct kernel door for) 324 245.33 B
+0.25 0.09 (each piece of server state that may be exposed as a sepa-) 324 233.33 B
+0.25 0.07 (rate Spring object. Since the kernel imposes a capability-) 324 221.33 B
+0.25 0.17 (like security model on door identif) 324 209.33 B
+0.25 0.17 (iers, this is a suitable) 469.39 209.33 B
+0.25 0.4 (implementation for any objects that are used to grant) 324 197.33 B
+0.25 0.09 (access to distinctly protected system resources. However) 324 185.33 B
+-0.13 (some servers export lar) 324 173.33 P
+-0.13 (ge number of objects where if a cli-) 416.46 173.33 P
+0.13 (ent is granted access to any of the objects, it might as well) 324 161.33 P
+0.22 (be granted access to all of them. In this case a subcontract) 324 149.33 P
+0.13 (can reduce system overhead by using a single door to pro-) 324 137.33 P
+(vide access to a set of objects.) 324 125.33 T
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+54 75.33 540 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(10) 54 65.62 T
+(Subcontract: A Flexible Base for Distributed Programming) 234 65.62 T
+54 750.68 540 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Re\337ections on subcontract) 243.98 739.85 T
+53 733.98 539 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.05 (The) 54 713.33 B
+4 F
+0.25 0.05 (cluster) 72.5 713.33 B
+3 F
+0.25 0.05 ( subcontract supports this notion. Each cluster) 100.07 713.33 B
+0.25 0.05 (object is represented by the combination of a door identi-) 54 701.33 B
+0.25 0.11 (f) 54 689.33 B
+0.25 0.11 (ier and an integer tag. The cluster invoke_preamble and) 56.89 689.33 B
+0.25 0.28 (invoke operations conspire to ship the tag along to the) 54 677.33 B
+0.25 0.1 (server when performing a cross-domain call on the door) 54 665.33 B
+0.25 0.1 (.) 285.5 665.33 B
+0.25 0.17 (The server) 54 653.33 B
+0.25 0.17 (-side cluster subcontract code uses this tag to) 98.22 653.33 B
+(dispatch to a particular object.) 54 641.33 T
+0 F
+(8.2) 54 609.33 T
+(The caching subcontract) 81 609.33 T
+3 F
+0.13 (When a server is on a dif) 54 593.33 P
+0.13 (ferent machine from its clients, it) 154.58 593.33 P
+0.25 0.03 (is often useful to perform caching on the client machines.) 54 581.33 B
+0.25 0.81 (So when we transmit a cacheable object between) 54 569.33 B
+0.25 0.06 (machines, we\325d like the receiving machine to register the) 54 557.33 B
+0.24 (received object with a local cache manager and access the) 54 545.33 P
+(object via the cache.) 54 533.33 T
+0.25 0.04 (The caching subcontract, which was originally developed) 54 509.33 B
+0.25 0.21 (for the Spring f) 54 497.33 B
+0.25 0.21 (ile system [Nelson et al 1993], provides) 119 497.33 B
+0.25 0.12 (this functionality) 54 485.33 B
+0.25 0.12 (. The representation of a caching object) 123.82 485.33 B
+0.25 0.2 (includes a door identif) 54 473.33 B
+0.25 0.2 (ier D1 that points to the server) 148.61 473.33 B
+0.25 0.2 (, a) 277.9 473.33 B
+0.25 0.31 (door identif) 54 461.33 B
+0.25 0.31 (ier D2 that points to a local cache, and the) 104.31 461.33 B
+(name of a cache manager) 54 449.33 T
+(.) 155.07 449.33 T
+0.06 (When we transmit a caching object between machines, we) 54 178.33 P
+-0.2 (only transmit the D1 door identi\336er and the cache manager) 54 166.33 P
+0.25 0.31 (name. The caching unmarshal code resolves the cache) 54 154.33 B
+0.25 0.22 (manager name in a machine-local context to discover a) 54 142.33 B
+0.25 0.3 (suitable local cache manager and then presents the D1) 54 130.33 B
+0.25 0.12 (door identif) 54 118.33 B
+0.25 0.12 (ier to the local cache manager and receives a) 102.04 118.33 B
+0.25 0.22 (new D2. Whenever the subcontract performs an invoke) 54 106.33 B
+0.25 0.02 (operation it uses the D2 door identif) 54 94.33 B
+0.25 0.02 (ier) 200.13 94.33 B
+0.25 0.02 (. So all invocations) 210.19 94.33 B
+54 90 288 720 C
+54 199 288 446 C
+83.83 324 126.83 362.5 R
+0.4 H
+2 Z
+8 X
+0 K
+N
+138.83 391.5 181.83 425.5 R
+N
+84.67 254.5 127.67 293 R
+N
+153.33 396.5 165.83 404 R
+0 X
+N
+104.83 334.5 120.33 349.5 R
+N
+90 450 3.5 2.75 112.83 343.25 A
+90 450 3.5 2.75 115.67 281.53 A
+112.13 325.48 114.33 333.17 116.54 325.48 114.33 326.28 4 Y
+V
+114.33 285.89 114.33 326.28 2 L
+N
+220.83 324 263.83 362.5 R
+8 X
+N
+219.83 253.5 262.83 292 R
+N
+227.33 334.5 242.83 349.5 R
+0 X
+N
+90 450 3.5 2.75 234.83 343.25 A
+90 450 3.5 2.75 232.33 280.25 A
+171.15 387.62 166.33 394 173.8 391.15 171.84 389.87 4 Y
+V
+230.83 346 171.84 389.87 2 L
+N
+145.8 391.88 152.33 396.5 149.24 389.12 148.02 391.13 4 Y
+V
+113.33 347.5 148.03 391.13 2 L
+N
+152.06 388.08 156.83 394.5 156.19 386.53 154.4 388.06 4 Y
+V
+116.44 286.44 154.41 388.05 2 L
+N
+244.33 305 273.33 320.5 R
+7 X
+V
+3 9 Q
+0 X
+(cacher) 247.09 314.5 T
+224.83 234.5 253.83 250 R
+7 X
+V
+0 X
+(client) 229.33 244 T
+89.56 234.89 118.56 250.39 R
+7 X
+V
+0 X
+(client) 94.06 244.39 T
+73.83 304 102.83 319.5 R
+7 X
+V
+0 X
+(cacher) 76.59 313.5 T
+(server) 191.56 409.97 T
+169.83 254.5 212.83 293 R
+8 X
+N
+0 X
+90 450 3.5 2.75 202.94 279.92 A
+159.08 386.04 158.33 394 163.19 387.65 160.84 387.59 4 Y
+V
+200.83 284.77 160.84 387.59 2 L
+N
+226.41 333.12 231.83 339 230.35 331.14 228.74 332.85 4 Y
+V
+204.83 284.77 228.74 332.85 2 L
+N
+232.13 328.31 234.33 336 236.54 328.31 234.33 329.11 4 Y
+V
+234.33 285.5 234.33 329.11 2 L
+N
+164.11 385.83 161.83 393.5 167.83 388.21 165.54 387.7 4 Y
+V
+229.83 286 165.54 387.7 2 L
+N
+176.83 235.5 205.83 251 R
+7 X
+V
+0 X
+(client) 181.33 245 T
+60 193.5 286 216.5 R
+7 X
+V
+60 201.5 286 207.5 C
+60 205.5 294 205.5 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+54 199 288 446 C
+0 9 Q
+0 X
+0 K
+(FIGURE  5.) 60 210.5 T
+1 F
+-0.22 (Three clients using the caching subcontract) 114 210.5 P
+54 90 288 720 C
+0 0 612 792 C
+3 10 Q
+0 X
+0 K
+0.25 0.02 (on a cacheable object go to an appropriate cache manager) 306 713.33 B
+(on the local machine. \050See Figure 5.\051) 306 701.33 T
+0 F
+(8.3) 306 669.33 T
+(The reconnectable subcontract) 333 669.33 T
+3 F
+0.25 0.07 (Some servers keep their state in stable storage. If a client) 306 653.33 B
+0.12 (has an object whose state is kept in such a server) 306 641.33 P
+0.12 (, it would) 501.71 641.33 P
+0.25 0.21 (like the object to be able to quietly recover from server) 306 629.33 B
+0.25 0.21 (crashes. Normal Spring door identif) 306 617.33 B
+0.25 0.21 (iers become invalid) 457.4 617.33 B
+-0.03 (when a server crashes, so we need to add some new mech-) 306 605.33 P
+(anism to allow a client to reconnect to a server) 306 593.33 T
+(.) 491.8 593.33 T
+0.25 0.08 (The reconnectable subcontract uses a representation con-) 306 569.33 B
+(sisting of a normal door identi\336er) 306 557.33 T
+(, plus an object name.) 439.76 557.33 T
+0.25 0.07 (Normally the recoverable subcontract\325) 306 533.33 B
+0.25 0.07 (s invoke code sim-) 462.88 533.33 B
+0.25 0.17 (ply does a kernel door invocation on the door identif) 306 521.33 B
+0.25 0.17 (ier) 526.99 521.33 B
+0.25 0.17 (.) 537.5 521.33 B
+0.25 0.08 (However) 306 509.33 B
+0.25 0.08 (, if this fails, the subcontract instead attempts to) 342.81 509.33 B
+0.25 0.03 (resolve the object name to obtain a new object and retries) 306 497.33 B
+0.25 0.21 (the operation on that. It retries periodically until it suc-) 306 485.33 B
+(ceeds in getting a new valid object.) 306 473.33 T
+0 F
+(8.4) 306 441.33 T
+(Future directions) 333 441.33 T
+3 F
+0.25 0.04 (In conjunction with some related projects, we are investi-) 306 425.33 B
+0.25 0.03 (gating a number of new subcontracts. One is to develop a) 306 413.33 B
+0.25 0.13 (subcontract that lets video objects encapsulate a specif) 306 401.33 B
+0.25 0.13 (ic) 532.65 401.33 B
+0.25 0.41 (network packet protocol for live video. Another is to) 306 389.33 B
+0.25 0.23 (develop a subcontract that transfers scheduling priority) 306 377.33 B
+0.25 0.14 (information between clients and servers for time-critical) 306 365.33 B
+0.25 0.1 (operations. Another is to transfer control information for) 306 353.33 B
+(atomic transactions at the subcontract level.) 306 341.33 T
+0.25 0.02 (As base system implementors, we are only too happy that) 306 317.33 B
+0.25 0.23 (these techniques appear suitable for implementation by) 306 305.33 B
+0.25 0.51 (third party experts as new subcontracts and will not) 306 293.33 B
+(require modi\336cations to the base RPC system.) 306 281.33 T
+0 F
+(8.5) 306 249.33 T
+(Motivation for examples) 333 249.33 T
+3 F
+0.25 0.3 (This paper is not about replication or caching or crash) 306 233.33 B
+0.03 (recovery) 306 221.33 P
+0.03 (. What we hope to have established in this section) 340.33 221.33 P
+-0.03 (is that the basic subcontract interfaces are suf) 306 209.33 P
+-0.03 (\336ciently gen-) 486.98 209.33 P
+0.25 0.1 (eral that they can accommodate a wide range of possible) 306 197.33 B
+0.25 0.41 (solutions, while still providing a uniform application) 306 185.33 B
+(model.) 306 173.33 T
+306 130 540 133 C
+306 132.16 540 132.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(9) 306 137 T
+(Re\337ections on subcontract) 333 137 T
+3 10 Q
+0.25 0.02 (One of the reasons that subcontract is ef) 306 113.33 B
+0.25 0.02 (fective is because) 468.63 113.33 B
+0.16 (it separates out the business of implementing objects from) 306 101.33 P
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(Subcontract: A Flexible Base for Distributed Programming) 232 64.95 T
+-2.22 (1) 548.7 64.95 P
+-2.22 (1) 552.55 64.95 P
+72 750.68 558 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Re\337ections on subcontract) 261.98 739.85 T
+71 733.98 557 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.24 (implementing object mechanisms. Subcontract implemen-) 72 713.33 P
+0.25 0.16 (tors provide a set of interesting subcontracts that enable) 72 701.33 B
+0.25 0.25 (object implementors to chose from a range of dif) 72 689.33 B
+0.25 0.25 (ferent) 281.42 689.33 B
+0.25 0.08 (object policies without requiring that every object imple-) 72 677.33 B
+-0.02 (mentor must become familiar with the details of the object) 72 665.33 P
+(implementation machinery) 72 653.33 T
+(.) 178.84 653.33 T
+0.25 0.1 (The set of operations that subcontract provides appear to) 72 629.33 B
+0.25 0.14 (be the right levers for obtaining control within a distrib-) 72 617.33 B
+0.25 0.04 (uted environment. By design, all the key actions taken on) 72 605.33 B
+0.09 (remote objects will involve the object\325) 72 593.33 P
+0.09 (s subcontract in one) 226.03 593.33 P
+0.25 0 (way or another) 72 581.33 B
+0.25 0 (. Subcontract provides an ef) 132.01 581.33 B
+0.25 0 (fective way for) 244.9 581.33 B
+(plugging in dif) 72 569.33 T
+(ferent policies for dif) 131.27 569.33 T
+(ferent objects,) 215.79 569.33 T
+0.25 0.37 (In practice subcontract has succeeded in reducing the) 72 545.33 B
+0.25 0.21 (functionality that must be provided by the base system.) 72 533.33 B
+0.25 0.11 (W) 72 521.33 B
+0.25 0.11 (e have been able to implement a number of interesting) 80.75 521.33 B
+0.25 0.14 (new subcontracts without requiring any new facilities in) 72 509.33 B
+0.25 0.07 (the base system, including a number of new subcontracts) 72 497.33 B
+0.25 0.01 (\050such as the caching subcontract\051 which we did not envis-) 72 485.33 B
+(age in the original subcontract design.) 72 473.33 T
+0 F
+(9.1) 72 441.33 T
+(Subcontracts versus specialized stubs) 99 441.33 T
+3 F
+0.25 0.5 (Our current system maintains a complete separation) 72 425.33 B
+-0.11 (between stubs and subcontracts. Any set of stubs can work) 72 413.33 P
+0.25 0.08 (with any subcontract and vice versa. An alternative solu-) 72 401.33 B
+0.25 0.14 (tion would have been to def) 72 389.33 B
+0.25 0.14 (ine a similar framework, but) 187.74 389.33 B
+0.25 0.02 (provide the subcontract functionality directly in the stubs,) 72 377.33 B
+0.25 0.09 (by implementing dif) 72 365.33 B
+0.25 0.09 (ferent sets of stubs for dif) 155.74 365.33 B
+0.25 0.09 (ferent sub-) 261.88 365.33 B
+0.25 0.08 (contracts. There were two reasons for implementing sub-) 72 353.33 B
+(contracts as separable modules.) 72 341.33 T
+0.25 0.01 (First, we wanted subcontract writers to be able to develop) 72 317.33 B
+-0.16 (new communication mechanisms without having to under-) 72 305.33 P
+0.25 0.01 (take the reasonably daunting task of developing \050or modi-) 72 293.33 B
+-0.21 (fying\051 a stub generator) 72 281.33 P
+-0.21 (. This ar) 161.63 281.33 P
+-0.21 (gues for a logical separation) 194.09 281.33 P
+0.25 0.23 (between stubs and subcontracts. However) 72 269.33 B
+0.25 0.23 (, this require-) 248.94 269.33 B
+0.15 (ment could be satis\336ed by permitting subcontracts to exist) 72 257.33 P
+0.25 0.2 (as in-line procedures, which could be in-lined into gen-) 72 245.33 B
+(eral-purpose stubs.) 72 233.33 T
+0.25 0.18 (Second, we wanted to avoid the need for client applica-) 72 209.33 B
+-0.04 (tions to load specialized stubs in order to talk to individual) 72 197.33 P
+0.25 0.08 (objects. If a program expects to receive an object of type) 72 185.33 B
+0.25 0.05 (foo through an RPC interface, then it can arrange to have) 72 173.33 B
+0.25 0.31 (the general-purpose foo stubs available and plug them) 72 161.33 B
+0.25 0.18 (together with appropriate subcontracts as needed. How-) 72 149.33 B
+0.25 0.25 (ever) 72 137.33 B
+0.25 0.25 (, it is a much more dif) 89.81 137.33 B
+0.25 0.25 (f) 184.95 137.33 B
+0.25 0.25 (icult proposition to have all) 187.98 137.33 B
+0.25 0.3 (possible f) 72 125.33 B
+0.25 0.3 (lavors of specialized foo stubs available. W) 113.35 125.33 B
+0.25 0.3 (e) 301.56 125.33 B
+0.25 0.01 (expect the set of subcontracts to be much smaller than the) 72 113.33 B
+-0.06 (set of types. While we are prepared to accept some moder-) 72 101.33 P
+0.25 0.14 (ate administrative hurdles for making a new subcontract) 324 713.33 B
+0.25 0 (available via dynamic linking, we are reluctant to pay this) 324 701.33 B
+(cost for all new combinations of types and subcontracts.) 324 689.33 T
+0.25 0.1 (As a future direction, we are interested in providing spe-) 324 665.33 B
+0.25 0.21 (cialized stubs for some particularly popular and perfor-) 324 653.33 B
+0.25 0.24 (mance-critical combinations of types and subcontracts.) 324 641.33 B
+-0.23 (W) 324 629.33 P
+-0.23 (e would still keep the general purpose stubs available for) 332.64 629.33 P
+0.25 0.01 (these types, so as to be able to deal with dif) 324 617.33 B
+0.25 0.01 (ferent subcon-) 500.2 617.33 B
+0.25 0.44 (tracts, but when we were lucky enough to receive an) 324 605.33 B
+0.25 0.16 (object that happened to be of the right type and subcon-) 324 593.33 B
+(tract we would be able to use the specialized stubs.) 324 581.33 T
+0 F
+(9.2) 324 549.33 T
+(The OS environment) 351 549.33 T
+3 F
+0.25 0.3 (Our subcontract work happens to have occurred in the) 324 533.33 B
+0.25 0.05 (context of a distributed operating system that provides an) 324 521.33 B
+0.25 0.16 (object-oriented IPC facility) 324 509.33 B
+0.25 0.16 (. Given this IPC mechanism,) 437.8 509.33 B
+0.25 0.06 (we have chosen to use it for a variety of our subcontracts) 324 497.33 B
+0.25 0.21 (and also to acknowledge its existence in our basic mar-) 324 485.33 B
+-0.24 (shalling machinery) 324 473.33 P
+-0.24 (. However this is mere happenstance. In) 399.49 473.33 P
+0.25 0.04 (dif) 324 461.33 B
+0.25 0.04 (ferent operating system environments it may be appro-) 335.05 461.33 B
+-0.24 (priate to use dif) 324 449.33 P
+-0.24 (ferent IPC machinery for subcontracts or to) 385.59 449.33 P
+0.25 0.04 (operate at a lower level and build exclusively on raw net-) 324 437.33 B
+0.25 0.21 (work packets. Even in our environment it is possible to) 324 425.33 B
+-0.22 (mix the use of the kernel\325) 324 413.33 P
+-0.22 (s door mechanism with the use of) 424.86 413.33 P
+(raw IP packets, should one desire.) 324 401.33 T
+0 F
+(9.3) 324 369.33 T
+(Performance overheads of subcontract) 351 369.33 T
+3 F
+0.25 0.34 (Subcontract has some performance costs over simpler) 324 353.33 B
+0.25 0.11 (RPC systems. Each object invocation always requires an) 324 341.33 B
+0.25 0.01 (additional two indirect procedure calls from the stubs into) 324 329.33 B
+0.25 0.13 (the client subcontract and typically requires a third indi-) 324 317.33 B
+0.25 0.16 (rect call from the server) 324 305.33 B
+0.25 0.16 (-side subcontract into the server) 424.24 305.33 B
+-0.07 (stubs. T) 324 293.33 P
+-0.07 (ransmitting an object requires an extra pair of calls) 355.25 293.33 P
+0.25 0.42 (for marshalling and unmarshalling and typically also) 324 281.33 B
+0.25 0.02 (involves the cost of marshalling and unmarshalling a sub-) 324 269.33 B
+0.02 (contract ID. However in our system we estimate that these) 324 257.33 P
+0.15 (costs add less than 2 microseconds \050on a SP) 324 245.33 P
+0.15 (ARCstation 2\051) 499.79 245.33 P
+0.25 0.09 (to the costs for a minimal remote call or to the costs of a) 324 233.33 B
+(simple object transmission.) 324 221.33 T
+0.25 0.28 (More signif) 324 197.33 B
+0.25 0.28 (icantly) 373.73 197.33 B
+0.25 0.28 (, subcontract makes it harder for the) 402.26 197.33 B
+0.25 0.04 (stubs to be optimized for particular sets of ar) 324 185.33 B
+0.25 0.04 (guments and) 506.53 185.33 B
+0.05 (results, as the subcontract may be adding an indeterminate) 324 173.33 P
+-0.19 (amount of data to the call or reply buf) 324 161.33 P
+-0.19 (fer) 473.95 161.33 P
+-0.19 (. This is one of the) 484.5 161.33 P
+0.25 0.03 (factors causing us to investigate specialized combinations) 324 149.33 B
+(of stubs and subcontracts. \050See Section 9.1 above.\051) 324 137.33 T
+0.25 0.03 (Individual subcontracts can be as ef) 324 113.33 B
+0.25 0.03 (f) 469.11 113.33 B
+0.25 0.03 (icient or as prof) 471.92 113.33 B
+0.25 0.03 (ligate) 535.64 113.33 B
+0.23 (as they wish. For example, the caching subcontract adds a) 324 101.33 P
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+54 75.33 540 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(12) 54 65.62 T
+(Subcontract: A Flexible Base for Distributed Programming) 234 65.62 T
+54 750.68 540 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(Conclusion) 274.74 739.85 T
+53 733.98 539 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.21 (signif) 54 713.33 B
+0.25 0.21 (icant overhead to object unmarshalling to achieve) 77.5 713.33 B
+(the useful optimization of local caching.) 54 701.33 T
+54 658 288 661 C
+54 660.16 288 660.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(10) 54 665 T
+(Conclusion) 81 665 T
+3 10 Q
+0.25 0.02 (W) 54 637.33 B
+0.25 0.02 (e have shown that it is possible to build distributed sys-) 62.66 637.33 B
+0.25 0.11 (tems where a variety of dif) 54 625.33 B
+0.25 0.11 (ferent object mechanisms can) 165.6 625.33 B
+-0.18 (co-exist. This enables the use of a range of lightweight and) 54 613.33 P
+0.25 0.34 (heavyweight mechanisms within the same system and) 54 601.33 B
+-0.09 (avoids the need to choose a single mechanism for all occa-) 54 589.33 P
+-0.21 (sions. Instead individual object implementations can select) 54 577.33 P
+0.25 0.04 (those features that they require and that they are prepared) 54 565.33 B
+(to pay for) 54 553.33 T
+(.) 92.33 553.33 T
+0.25 0.19 (These dif) 54 529.33 B
+0.25 0.19 (ferent object mechanisms are all on a par with) 93.23 529.33 B
+0.25 0.22 (one another) 54 517.33 B
+0.25 0.22 (. There is no penalty for application writers) 103.09 517.33 B
+0.18 (who wish to use new subcontracts in place of the standard) 54 505.33 P
+0.05 (ones. A new type such as) 54 493.33 P
+4 F
+0.05 (r) 157.9 493.33 P
+0.05 (eplicated_\336le) 161.42 493.33 P
+3 F
+0.05 (, using a new sub-) 215.3 493.33 P
+0.25 0.31 (contract, such a replicon, can be used in all the places) 54 481.33 B
+(where the earlier) 54 469.33 T
+(, simpler) 120.79 469.33 T
+(, type) 155.39 469.33 T
+4 F
+(\336le) 180.11 469.33 T
+3 F
+( was used.) 192.33 469.33 T
+0.25 0.02 (It is therefore possible for object implementors to provide) 54 445.33 B
+0.23 (a wide range of dif) 54 433.33 P
+0.23 (ferent possibilities for security) 130.29 433.33 P
+0.23 (, for per-) 252.27 433.33 P
+0.25 0.13 (formance, for robustness, for scope of access, all behind) 54 421.33 B
+(the same set of application-visible interfaces.) 54 409.33 T
+54 366 288 369 C
+54 368.16 288 368.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(1) 54 373 T
+(1) 60.01 373 T
+(Acknowledgments) 81 373 T
+3 10 Q
+0.25 0.22 (W) 54 345.33 B
+0.25 0.22 (e would like to acknowledge the contributions of Jon) 62.85 345.33 B
+0.25 0.23 (Gibbons, T) 54 333.33 B
+0.25 0.23 (ed Goldstein, T) 100.81 333.33 B
+0.25 0.23 (ommy Joseph, Peter Kessler) 165.95 333.33 B
+0.25 0.23 (,) 285.5 333.33 B
+0 (Y) 54 321.33 P
+0 (ousef Khalidi, Panos Kougiouris, Mike Nelson, and San-) 60.22 321.33 P
+0.25 0.03 (jay Radia to the evolution and implementation of subcon-) 54 309.33 B
+0.25 0.07 (tract and to the development of specif) 54 297.33 B
+0.25 0.07 (ic subcontracts. W) 208.53 297.33 B
+0.25 0.07 (e) 283.56 297.33 B
+0.25 0.32 (would also like to thank Bob Hagmann, Roger Hayes,) 54 285.33 B
+-0.24 (Peter Kessler) 54 273.33 P
+-0.24 (, and Mike Nelson for their helpful comments) 106.4 273.33 P
+(on earlier drafts of this paper) 54 261.33 T
+(.) 169.25 261.33 T
+54 218 288 221 C
+54 220.16 288 220.16 2 L
+0.25 H
+0 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 12 Q
+0 X
+0 K
+(12) 54 225 T
+(References) 81 225 T
+3 10 Q
+0.25 0.1 ([Acetta et al 1986] M. Acceta, R. Baron, W) 54 201.33 B
+0.25 0.1 (. Bolosky) 233.84 201.33 B
+0.25 0.1 (, D.) 272.72 201.33 B
+0.25 0.62 (Golub, R. Rashid, A. T) 82.8 189.63 B
+0.25 0.62 (evanian & M. Y) 189.56 189.63 B
+0.25 0.62 (oung.) 263.01 189.63 B
+0.25 0.55 (\322Mach: A New Kernel Foundation For UNIX) 82.8 177.93 B
+0.25 0.45 (Development.\323 Summer USENIX Conference,) 82.8 166.23 B
+(Atlanta, June 1986.) 82.8 154.53 T
+0.25 0.49 ([Almes et al 1985] Guy T) 54 136.83 B
+0.25 0.49 (. Almes, Andrew P) 169.23 136.83 B
+0.25 0.49 (. Black,) 253.51 136.83 B
+0.25 0.01 (Edward D. Lazowska, and Jerre D. Noe. The Eden) 82.8 125.13 B
+0.25 0.09 (System: A T) 82.8 113.43 B
+0.25 0.09 (echnical Review) 134.14 113.43 B
+0.25 0.09 (.\323 IEEE T) 201.45 113.43 B
+0.25 0.09 (ransactions) 242.12 113.43 B
+(on Software Engineering, 1) 82.8 101.73 T
+(1\0501\051, January 1985.) 192.41 101.73 T
+0.25 0.09 ([Bershad et al 1990] B. N. Bershad, T) 306 713.33 B
+0.25 0.09 (.E Anderson, E. D.) 461.92 713.33 B
+0.25 0.07 (Lazowska, and H. M. Levy) 334.8 701.63 B
+0.25 0.07 (. \322Lightweight Remote) 446.07 701.63 B
+0.25 0.09 (Procedure Call.\323 ACM T) 334.8 689.93 B
+0.25 0.09 (ransactions on Computer) 437.62 689.93 B
+(Systems 8\0501\051, February 1990.) 334.8 678.23 T
+0.25 0.12 ([Birman & Joseph 1987] K. P) 306 660.53 B
+0.25 0.12 (. Birman and T) 428.91 660.53 B
+0.25 0.12 (. A. Joseph.) 491.2 660.53 B
+0.25 0.07 (\322Exploiting V) 334.8 648.83 B
+0.25 0.07 (irtual Synchrony in Distributed Sys-) 391.71 648.83 B
+0.25 0.08 (tems.\323 Proc. of the 1) 334.8 637.13 B
+0.25 0.08 (1th Symposium on Operating) 419.26 637.13 B
+0.25 0.53 (Systems Principles, Austin, T) 334.8 625.43 B
+0.25 0.53 (exas, December) 468.95 625.43 B
+(1981.) 334.8 613.73 T
+0.25 0.21 ([Birrell & Nelson 1984] A. D. Birrell and B. J. Nelson.) 306 596.03 B
+0.25 0.29 (\322Implementing Remote Procedure Calls.\323 ACM) 334.8 584.33 B
+(T) 334.8 572.63 T
+(rans. on Computer Systems, 2\0501\051, February 1984.) 340.56 572.63 T
+0.25 0.3 ([Black et al 1987] A. Black, N. Hutchinson, E. Jul, H.) 306 554.93 B
+0.25 0.33 (Levy) 334.8 543.23 B
+0.25 0.33 (, and L. Carter) 356.02 543.23 B
+0.25 0.33 (. \322Distribution and Abstract) 419.22 543.23 B
+0.25 0.03 (T) 334.8 531.53 B
+0.25 0.03 (ypes in Emerald.\323 IEEE T) 340.24 531.53 B
+0.25 0.03 (rans on Software Engi-) 446.23 531.53 B
+(neering, 13\0501\051, January 1987.) 334.8 519.83 T
+0.25 0.36 ([Draves 1990] R. Draves. \322A Revised IPC Interface.\323) 306 502.13 B
+0.25 0.16 (Proc. of the Usenix Mach W) 334.8 490.43 B
+0.25 0.16 (orkshop, Burlington,) 453.73 490.43 B
+(V) 334.8 478.73 T
+(ermont, October 1990.) 340.91 478.73 T
+0.25 0.65 ([Foote & Johnson 1989] Brian Foote and Ralph E.) 306 461.03 B
+0.25 0.23 (Johnson. \322Ref) 334.8 449.33 B
+0.25 0.23 (lective Facilities in Smalltalk-80.\323) 394.1 449.33 B
+0.25 0.19 (Proc. of the Conference on Object-Oriented Sys-) 334.8 437.63 B
+(tems, Languages, and Applications, October 1989.) 334.8 425.93 T
+0.25 0.25 ([Hamilton & Kougiouris 1993] G. Hamilton & P) 306 408.23 B
+0.25 0.25 (. Kou-) 513.2 408.23 B
+0.25 0.24 (giouris. \322The Spring nucleus: A microkernel for) 334.8 396.53 B
+0.25 0.01 (objects.\323 Proc of the 1993 Summer Usenix confer-) 334.8 384.83 B
+(ence, Cincinnati, June 1993.) 334.8 373.13 T
+0.24 ([Herlihy & Liskov 1982] M. P) 306 355.43 P
+0.24 (. Herlihy and B. Liskov) 428.33 355.43 P
+0.24 (. \322A) 523.1 355.43 P
+0.25 0.32 (value transmission mechanism for abstract data) 334.8 343.73 B
+0.25 0.18 (types.\323 ACM T) 334.8 332.03 B
+0.25 0.18 (rans. on Programming Languages) 399.17 332.03 B
+(and Systems, 4\0504\051, October 1982.) 334.8 320.33 T
+0.25 0.1 ([Khalidi & Nelson 1993A] Y) 306 302.63 B
+0.25 0.1 (. A. Khalidi and M. N. Nel-) 425.49 302.63 B
+0.25 0.27 (son. \322The Spring V) 334.8 290.93 B
+0.25 0.27 (irtual Memory System.\323 Sun) 417.55 290.93 B
+-0.22 (Microsystems Laboratories, SMLI TR-93-9, March) 334.8 279.23 P
+(1993.) 334.8 267.53 T
+0.25 0.11 ([Khalidi & Nelson 1993B] Y) 306 249.83 B
+0.25 0.11 (. A. Khalidi and M. N. Nel-) 425.22 249.83 B
+0.25 0.16 (son. \322An Implementation of UNIX on an Object-) 334.8 238.13 B
+0.25 0.41 (oriented Operating System.\323 Proc. of the 1993) 334.8 226.43 B
+0.25 0.33 (W) 334.8 214.73 B
+0.25 0.33 (inter Usenix Conference, San Diego, January) 344.17 214.73 B
+(1993.) 334.8 203.03 T
+0.25 0.11 ([Lazowska et al 1981] E. Lazowska, H. Levy) 306 185.33 B
+0.25 0.11 (, G. Almes,) 492.61 185.33 B
+0.25 0.11 (M. Fischer) 334.8 173.63 B
+0.25 0.11 (, R. Fowler) 379.07 173.63 B
+0.25 0.11 (, and S. V) 425.38 173.63 B
+0.25 0.11 (estal. \322The Archi-) 465.83 173.63 B
+0.24 (tecture of the Eden System.\323 Proc. of the 8th Sym-) 334.8 161.93 P
+0.25 0.19 (posium on Operating Systems Principles, Pacif) 334.8 150.23 B
+0.25 0.19 (ic) 532.59 150.23 B
+(Grove, California, December 1981.) 334.8 138.53 T
+0.25 0.25 ([Liskov 1988] B. Liskov) 306 120.83 B
+0.25 0.25 (, \322Distributed programming in) 410.67 120.83 B
+0.25 0.55 (Ar) 334.8 109.13 B
+0.25 0.55 (gus.\323 Communications of the ACM, 31\0503\051,) 346.27 109.13 B
+(March 1988.) 334.8 97.43 T
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+72 75.33 558 75.33 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+1 8 Q
+(Subcontract: A Flexible Base for Distributed Programming) 232 64.95 T
+-2.22 (13) 548.1 64.95 P
+72 750.68 558 750.68 2 L
+1.25 H
+0 Z
+N
+1 9 Q
+(References) 291.99 739.85 T
+71 733.98 557 733.98 2 L
+0.25 H
+N
+3 10 Q
+0.25 0.1 ([Maes 1987] Pattie Maes. \322Concepts and Experiments in) 72 713.33 B
+0.25 0.25 (Computational Ref) 100.8 701.63 B
+0.25 0.25 (lection.\323 Proc. of the Confer-) 181.22 701.63 B
+0.25 0.05 (ence on Object-Oriented Systems, Languages, and) 100.8 689.93 B
+(Applications, October 1987.) 100.8 678.23 T
+0.25 0.27 ([Nelson 1981] B. J. Nelson. \322Remote Procedure Call.\323) 72 660.53 B
+0.25 0.13 (T) 100.8 648.83 B
+0.25 0.13 (ech report CSL-81-9, Xerox Palo Alto Research) 106.34 648.83 B
+(Center) 100.8 637.13 T
+(, Palo Alto, California, 1981.) 127.06 637.13 T
+-0.04 ([Nelson et al 1993] M. N. Nelson, Y) 72 619.43 P
+-0.04 (. A. Khalidi, and P) 216.55 619.43 P
+-0.04 (. W) 290.02 619.43 P
+-0.04 (.) 303.5 619.43 P
+0.14 (Madany) 100.8 607.73 P
+0.14 (. \322The Spring File System.\323 Sun Microsys-) 132.92 607.73 P
+(tems Laboratories, SMLI TR-93-10, March 1993.) 100.8 596.03 T
+0.25 0.52 ([OMG 1991] Object Management Group. \322Common) 72 578.33 B
+0.25 0.01 (Object Request Broker Architecture and Specif) 100.8 566.63 B
+0.25 0.01 (ica-) 290.99 566.63 B
+(tion.\323 OMG Document Number 91.12.1.) 100.8 554.93 T
+0.25 0.31 ([Schroeder & Burrows 1990] M. D. Schroeder and M.) 72 537.23 B
+0.25 0.38 (Burrows. \322Performance of Firef) 100.8 525.53 B
+0.25 0.38 (ly RPC.\323 ACM) 239.98 525.53 B
+0.25 0.05 (T) 100.8 513.83 B
+0.25 0.05 (ransactions on Computer Systems 8\0501\051, February) 106.61 513.83 B
+(1990.) 100.8 502.13 T
+0.25 0.22 ([Schuller et al 1992] P) 72 484.43 B
+0.25 0.22 (. Schuller) 166.88 484.43 B
+0.25 0.22 (, H. Hartig, W) 207.23 484.43 B
+0.25 0.22 (. E. Kuh-) 267.32 484.43 B
+0.25 0.57 (nhauser) 100.8 472.73 B
+0.25 0.57 (, and H. Streich. \322Performance of the) 135.48 472.73 B
+0.25 0.39 (BirliX Operating System.\323 Proc. of the Usenix) 100.8 461.03 B
+0.25 0.48 (W) 100.8 449.33 B
+0.25 0.48 (orkshop on Micro-kernels and Other Kernel) 109.92 449.33 B
+(Architectures, Seattle, April 1992.) 100.8 437.63 T
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+36 9 567 774 R
+7 X
+0 K
+V
+3 8 Q
+0 X
+(\251 Copyright 1993 Sun Microsystems, Inc. The SMLI T) 72 244.67 T
+(echnical Report Series is published by Sun Microsystems Laboratories, Inc.) 249.96 244.67 T
+(Printed in U.S.A.) 72 234.67 T
+0.69 (Unlimited copying without fee is permitted provided that the copies are not made nor distributed for direct commercial advantage, and credit to the) 72 214.67 P
+0.43 (source is given. Otherwise, no part of this work covered by copyright hereon may be reproduced in any form or by any means graphic, electronic, or) 72 204.67 P
+0.22 (mechanical, including photocopying, recording, taping, or storage in an information retrieval system, without the prior written permission of the copy-) 72 194.67 P
+(right owner) 72 184.67 T
+(.) 108.66 184.67 T
+(TRADEMARKS) 72 164.67 T
+0.43 (Sun, Sun Microsystems, and the Sun logo are trademarks or registered trademarks of Sun Microsystems, Inc. UNIX and OPEN LOOK are registered) 72 154.67 P
+0.07 (trademarks of UNIX System Laboratories, Inc. All SP) 72 144.67 P
+0.07 (ARC trademarks, including the SCD Compliant Logo, are trademarks or registered trademarks of) 245.26 144.67 P
+0.42 (SP) 72 134.67 P
+0.42 (ARC International, Inc. SP) 80.16 134.67 P
+0.42 (ARCstation, SP) 167.12 134.67 P
+0.42 (ARCserver) 217.48 134.67 P
+0.42 (, SP) 253.15 134.67 P
+0.42 (ARCengine, SP) 265.73 134.67 P
+0.42 (ARCworks, and SP) 316.08 134.67 P
+0.42 (ARCompiler are licensed exclusively to Sun Microsys-) 378.62 134.67 P
+(tems, Inc. All other product names mentioned herein are the trademarks of their respective owners.) 72 124.67 T
+FMENDPAGE
+%%EndPage: "14" 15
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 14 1
+%%DocumentFonts: Helvetica-Bold
+%%+ Helvetica
+%%+ Times-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Symbol
+%%+ Courier-Bold
